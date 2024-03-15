@@ -1,0 +1,691 @@
+[gd_scene load_steps=31 format=3 uid="uid://b2k4bxyq11gmp"]
+
+[ext_resource type="PackedScene" uid="uid://hmvgrtvmxvgp" path="res://Scenes/Levels/root_level.tscn" id="1_5jb8s"]
+[ext_resource type="Resource" uid="uid://dr4mh15bcyyva" path="res://Structure/Slides/11TutControlsGP.tres" id="2_43ttt"]
+[ext_resource type="PackedScene" uid="uid://b4bwuy6bt5olc" path="res://Scenes/Prefabs/end_slide_trigger.tscn" id="2_p1kcx"]
+[ext_resource type="PackedScene" uid="uid://booq4oy72ekhw" path="res://VisualAssets/Level/Level01Remeshed.glb" id="3_xdxvj"]
+[ext_resource type="Resource" uid="uid://dyl10hlk3q6ox" path="res://Structure/Slides/13TutScannerGP.tres" id="4_2d72t"]
+[ext_resource type="Resource" uid="uid://cbaguxlyhfru6" path="res://Structure/Slides/15Impact1GP.tres" id="5_wcbe3"]
+[ext_resource type="PackedScene" uid="uid://dteyjsjnrk61v" path="res://Scenes/Prefabs/noise_area.tscn" id="6_kidcy"]
+[ext_resource type="PackedScene" uid="uid://bowot62yw0op8" path="res://VisualAssets/CommonMeshes/RockClusterMid1.glb" id="7_adrhj"]
+[ext_resource type="PackedScene" uid="uid://b401cxayi5347" path="res://VisualAssets/CommonMeshes/SmokePlume.glb" id="7_d7m8p"]
+[ext_resource type="Material" uid="uid://g4skujlf5tqi" path="res://VisualAssets/Aberration/SmokeMat.tres" id="8_hf8v2"]
+[ext_resource type="PackedScene" uid="uid://cgyha0b7wpqnf" path="res://VisualAssets/CommonMeshes/RockCliffLarge2.glb" id="10_qkfrj"]
+[ext_resource type="PackedScene" uid="uid://bjirdaaenf8lx" path="res://VisualAssets/CommonMeshes/TreeSmall1.glb" id="13_hbn0l"]
+[ext_resource type="PackedScene" uid="uid://4phy4uhjke3r" path="res://VisualAssets/CommonMeshes/TreeSmall2.glb" id="14_h5hg0"]
+[ext_resource type="PackedScene" uid="uid://cfqeyuoify5f4" path="res://VisualAssets/CommonMeshes/RockCliffLarge3.glb" id="14_wpiml"]
+[ext_resource type="PackedScene" uid="uid://p7ilk0m3dtff" path="res://VisualAssets/CommonMeshes/RockCliffLarge1.glb" id="15_twwac"]
+[ext_resource type="PackedScene" uid="uid://dc4vdt6msxqj6" path="res://VisualAssets/CommonMeshes/RockClusterSmall2.glb" id="16_duniy"]
+[ext_resource type="PackedScene" uid="uid://crfdvfsmq5pck" path="res://VisualAssets/CommonMeshes/Clover1.glb" id="16_yskm2"]
+[ext_resource type="PackedScene" uid="uid://duahsqvpykcqn" path="res://VisualAssets/CommonMeshes/Clover2.glb" id="17_6ejcy"]
+[ext_resource type="PackedScene" uid="uid://b5pu8fdq8hsqr" path="res://VisualAssets/CommonMeshes/RockClusterMid2.glb" id="18_6iml8"]
+[ext_resource type="PackedScene" uid="uid://b1apqxed312dd" path="res://VisualAssets/CommonMeshes/RockClusterSmall1.glb" id="19_oity4"]
+[ext_resource type="PackedScene" uid="uid://bsa8prvlom5re" path="res://VisualAssets/CommonMeshes/TreeMid1.glb" id="21_p2tbi"]
+[ext_resource type="PackedScene" uid="uid://ccmdk2awuoh4k" path="res://VisualAssets/CommonMeshes/OutOfBoundsTexture.glb" id="22_l5nop"]
+[ext_resource type="Shader" uid="uid://clrd1ygkaetwu" path="res://VisualAssets/Aberration/AberrationMarkup.tres" id="24_6but8"]
+[ext_resource type="PackedScene" uid="uid://bqlfi5tgab07o" path="res://VisualAssets/Player/VehicleNew.glb" id="24_u71rx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_abb36"]
+size = Vector3(4.20898, 3.39868, 4.27734)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b6j1y"]
+vertex_color_use_as_albedo = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pptn4"]
+_surfaces = [{
+"aabb": AABB(-6.88897, 0.0710258, -1.25605, 8.60336, 42.8866, 24.2821),
+"format": 34896613377,
+"index_count": 216,
+"index_data": PackedByteArray(13, 0, 34, 0, 32, 0, 13, 0, 12, 0, 34, 0, 9, 0, 30, 0, 41, 0, 9, 0, 0, 0, 30, 0, 12, 0, 36, 0, 34, 0, 12, 0, 11, 0, 36, 0, 11, 0, 38, 0, 36, 0, 11, 0, 10, 0, 38, 0, 10, 0, 41, 0, 38, 0, 10, 0, 9, 0, 41, 0, 17, 0, 46, 0, 43, 0, 17, 0, 27, 0, 46, 0, 23, 0, 44, 0, 55, 0, 23, 0, 14, 0, 44, 0, 54, 0, 16, 0, 22, 0, 54, 0, 45, 0, 16, 0, 26, 0, 50, 0, 48, 0, 26, 0, 25, 0, 50, 0, 25, 0, 52, 0, 50, 0, 25, 0, 24, 0, 52, 0, 24, 0, 55, 0, 52, 0, 24, 0, 23, 0, 55, 0, 39, 0, 8, 0, 7, 0, 39, 0, 40, 0, 8, 0, 37, 0, 7, 0, 6, 0, 37, 0, 39, 0, 7, 0, 35, 0, 6, 0, 5, 0, 35, 0, 37, 0, 6, 0, 33, 0, 5, 0, 4, 0, 33, 0, 35, 0, 5, 0, 28, 0, 4, 0, 1, 0, 28, 0, 33, 0, 4, 0, 40, 0, 2, 0, 8, 0, 40, 0, 31, 0, 2, 0, 53, 0, 22, 0, 21, 0, 53, 0, 54, 0, 22, 0, 51, 0, 21, 0, 20, 0, 51, 0, 53, 0, 21, 0, 49, 0, 20, 0, 19, 0, 49, 0, 51, 0, 20, 0, 47, 0, 19, 0, 18, 0, 47, 0, 49, 0, 19, 0, 42, 0, 18, 0, 15, 0, 42, 0, 47, 0, 18, 0, 27, 0, 48, 0, 46, 0, 27, 0, 26, 0, 48, 0, 39, 0, 41, 0, 40, 0, 39, 0, 38, 0, 41, 0, 37, 0, 38, 0, 39, 0, 37, 0, 36, 0, 38, 0, 35, 0, 36, 0, 37, 0, 35, 0, 34, 0, 36, 0, 33, 0, 34, 0, 35, 0, 33, 0, 32, 0, 34, 0, 28, 0, 32, 0, 33, 0, 28, 0, 29, 0, 32, 0, 40, 0, 30, 0, 31, 0, 40, 0, 41, 0, 30, 0, 53, 0, 55, 0, 54, 0, 53, 0, 52, 0, 55, 0, 51, 0, 52, 0, 53, 0, 51, 0, 50, 0, 52, 0, 49, 0, 50, 0, 51, 0, 49, 0, 48, 0, 50, 0, 47, 0, 48, 0, 49, 0, 47, 0, 46, 0, 48, 0, 42, 0, 46, 0, 47, 0, 42, 0, 43, 0, 46, 0, 54, 0, 44, 0, 45, 0, 54, 0, 55, 0, 44, 0, 3, 0, 32, 0, 29, 0, 3, 0, 13, 0, 32, 0),
+"lods": [0.796388, PackedByteArray(9, 0, 30, 0, 8, 0, 9, 0, 0, 0, 30, 0, 8, 0, 30, 0, 31, 0, 8, 0, 31, 0, 2, 0, 10, 0, 9, 0, 8, 0, 10, 0, 8, 0, 7, 0, 6, 0, 10, 0, 7, 0, 6, 0, 11, 0, 10, 0, 5, 0, 11, 0, 6, 0, 5, 0, 12, 0, 11, 0, 4, 0, 12, 0, 5, 0, 4, 0, 13, 0, 12, 0, 28, 0, 13, 0, 4, 0, 28, 0, 4, 0, 1, 0, 28, 0, 29, 0, 13, 0, 3, 0, 13, 0, 29, 0, 17, 0, 27, 0, 43, 0, 42, 0, 43, 0, 27, 0, 42, 0, 27, 0, 18, 0, 42, 0, 18, 0, 15, 0, 18, 0, 27, 0, 26, 0, 18, 0, 26, 0, 19, 0, 19, 0, 26, 0, 25, 0, 19, 0, 25, 0, 20, 0, 20, 0, 25, 0, 24, 0, 20, 0, 24, 0, 21, 0, 21, 0, 24, 0, 23, 0, 21, 0, 23, 0, 22, 0, 23, 0, 16, 0, 22, 0, 23, 0, 45, 0, 16, 0, 23, 0, 44, 0, 45, 0, 23, 0, 14, 0, 44, 0)],
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 56,
+"vertex_data": PackedByteArray(59, 190, 212, 253, 32, 208, 0, 0, 91, 204, 64, 0, 134, 23, 0, 0, 0, 0, 192, 254, 64, 233, 0, 0, 63, 205, 27, 0, 0, 0, 0, 0, 145, 196, 236, 33, 33, 33, 0, 0, 214, 157, 181, 81, 6, 70, 0, 0, 216, 103, 148, 136, 222, 138, 0, 0, 187, 50, 9, 175, 154, 178, 0, 0, 188, 2, 101, 218, 119, 216, 0, 0, 221, 221, 22, 217, 123, 179, 0, 0, 11, 251, 193, 175, 106, 114, 0, 0, 140, 235, 66, 136, 188, 69, 0, 0, 110, 213, 253, 80, 117, 18, 0, 0, 23, 209, 6, 33, 214, 1, 0, 0, 12, 123, 255, 255, 255, 255, 0, 0, 25, 172, 6, 0, 7, 10, 0, 0, 200, 65, 180, 252, 215, 186, 0, 0, 175, 237, 0, 0, 28, 13, 0, 0, 78, 161, 211, 32, 82, 13, 0, 0, 171, 114, 9, 82, 62, 31, 0, 0, 47, 82, 119, 137, 146, 78, 0, 0, 166, 86, 194, 176, 208, 110, 0, 0, 162, 73, 235, 215, 67, 156, 0, 0, 249, 150, 14, 220, 149, 239, 0, 0, 69, 213, 100, 176, 238, 184, 0, 0, 108, 249, 128, 137, 142, 131, 0, 0, 255, 255, 160, 80, 56, 57, 0, 0, 32, 245, 111, 32, 179, 20, 0, 0, 137, 204, 63, 0, 91, 18, 0, 0, 10, 205, 39, 0, 53, 5, 0, 0, 238, 125, 36, 254, 158, 216, 0, 0, 76, 64, 112, 254, 194, 224, 0, 0, 246, 205, 115, 33, 170, 9, 0, 0, 172, 199, 243, 33, 35, 25, 0, 0, 24, 197, 45, 82, 240, 30, 0, 0, 98, 173, 24, 82, 2, 54, 0, 0, 148, 188, 157, 136, 29, 95, 0, 0, 163, 146, 178, 136, 213, 116, 0, 0, 203, 175, 75, 176, 45, 140, 0, 0, 129, 123, 166, 176, 119, 158, 0, 0, 130, 82, 254, 217, 154, 203, 0, 0, 245, 141, 192, 217, 174, 193, 0, 0, 0, 188, 7, 0, 200, 10, 0, 0, 198, 221, 3, 0, 95, 12, 0, 0, 137, 105, 253, 254, 216, 234, 0, 0, 75, 83, 182, 253, 253, 207, 0, 0, 208, 221, 193, 32, 231, 18, 0, 0, 100, 184, 222, 32, 145, 15, 0, 0, 54, 212, 119, 81, 31, 49, 0, 0, 83, 158, 109, 82, 119, 38, 0, 0, 140, 192, 228, 137, 55, 114, 0, 0, 245, 140, 215, 137, 231, 97, 0, 0, 92, 167, 49, 177, 86, 160, 0, 0, 15, 131, 65, 177, 196, 138, 0, 0, 209, 99, 221, 217, 75, 186, 0, 0, 211, 123, 227, 218, 87, 211, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8w2yc"]
+resource_name = "SmokePlume_Plane"
+_surfaces = [{
+"aabb": AABB(-6.88897, 0.0710258, -1.25605, 8.60336, 42.8866, 24.2821),
+"attribute_data": PackedByteArray(0, 0, 0, 255, 212, 163, 147, 42, 0, 0, 0, 255, 39, 206, 10, 250, 0, 0, 0, 255, 39, 203, 252, 37, 1, 1, 1, 255, 230, 183, 255, 255, 0, 0, 0, 255, 20, 187, 23, 225, 0, 0, 0, 255, 149, 177, 20, 194, 1, 1, 1, 255, 231, 180, 78, 157, 1, 1, 1, 255, 166, 189, 39, 113, 2, 2, 2, 255, 39, 206, 195, 69, 1, 1, 1, 255, 92, 159, 130, 75, 8, 8, 8, 255, 196, 139, 99, 121, 5, 5, 5, 255, 189, 140, 223, 165, 3, 3, 3, 255, 198, 147, 163, 201, 2, 2, 2, 255, 98, 161, 237, 231, 0, 0, 0, 255, 36, 239, 245, 32, 0, 0, 0, 255, 17, 231, 255, 255, 0, 0, 0, 255, 249, 206, 225, 45, 0, 0, 0, 255, 254, 255, 61, 254, 0, 0, 0, 255, 167, 222, 173, 229, 0, 0, 0, 255, 51, 215, 91, 199, 0, 0, 0, 255, 28, 211, 210, 164, 0, 0, 0, 255, 55, 206, 120, 122, 0, 0, 0, 255, 134, 214, 224, 78, 1, 1, 1, 255, 255, 255, 213, 63, 0, 0, 0, 255, 33, 250, 158, 110, 0, 0, 0, 255, 19, 252, 146, 157, 0, 0, 0, 255, 48, 249, 216, 195, 2, 2, 2, 255, 78, 251, 132, 227, 0, 0, 0, 255, 61, 201, 90, 251, 1, 1, 1, 255, 208, 188, 174, 254, 0, 0, 0, 255, 31, 177, 5, 41, 0, 0, 0, 255, 220, 189, 137, 39, 73, 73, 73, 255, 254, 167, 43, 230, 73, 73, 73, 255, 254, 167, 43, 230, 88, 88, 88, 255, 120, 180, 217, 226, 252, 252, 252, 255, 93, 156, 117, 199, 226, 226, 226, 255, 254, 168, 66, 196, 226, 226, 226, 255, 254, 168, 66, 196, 220, 220, 220, 255, 107, 154, 244, 162, 220, 220, 220, 255, 107, 154, 244, 162, 139, 139, 139, 255, 57, 167, 57, 160, 192, 192, 192, 255, 68, 158, 85, 118, 195, 195, 195, 255, 38, 171, 53, 116, 9, 9, 9, 255, 31, 189, 218, 71, 9, 9, 9, 255, 31, 189, 218, 71, 17, 17, 17, 255, 100, 176, 107, 73, 17, 17, 17, 255, 100, 176, 107, 73, 0, 0, 0, 255, 29, 237, 145, 255, 0, 0, 0, 255, 243, 249, 170, 254, 0, 0, 0, 255, 77, 229, 232, 36, 0, 0, 0, 255, 207, 216, 237, 41, 83, 83, 83, 255, 99, 243, 29, 228, 83, 83, 83, 255, 99, 243, 29, 228, 245, 245, 245, 255, 146, 230, 20, 229, 245, 245, 245, 255, 146, 230, 20, 229, 248, 248, 248, 255, 146, 238, 241, 196, 250, 250, 250, 255, 209, 225, 66, 198, 213, 213, 213, 255, 243, 237, 18, 160, 213, 213, 213, 255, 60, 225, 82, 162, 195, 195, 195, 255, 119, 234, 216, 114, 195, 195, 195, 255, 119, 234, 216, 114, 199, 199, 199, 255, 225, 221, 62, 118, 30, 30, 30, 255, 233, 228, 168, 73, 30, 30, 30, 255, 233, 228, 168, 73, 11, 11, 11, 255, 156, 241, 13, 69, 11, 11, 11, 255, 156, 241, 13, 69),
+"format": 34896613407,
+"index_count": 216,
+"index_data": PackedByteArray(13, 0, 35, 0, 32, 0, 13, 0, 12, 0, 35, 0, 9, 0, 30, 0, 46, 0, 9, 0, 0, 0, 30, 0, 12, 0, 39, 0, 35, 0, 12, 0, 11, 0, 39, 0, 11, 0, 41, 0, 38, 0, 11, 0, 10, 0, 41, 0, 10, 0, 45, 0, 41, 0, 10, 0, 9, 0, 45, 0, 17, 0, 51, 0, 48, 0, 17, 0, 27, 0, 51, 0, 23, 0, 49, 0, 65, 0, 23, 0, 14, 0, 49, 0, 62, 0, 16, 0, 22, 0, 62, 0, 50, 0, 16, 0, 26, 0, 57, 0, 55, 0, 26, 0, 25, 0, 57, 0, 25, 0, 60, 0, 57, 0, 25, 0, 24, 0, 60, 0, 24, 0, 64, 0, 59, 0, 24, 0, 23, 0, 64, 0, 42, 0, 8, 0, 7, 0, 42, 0, 44, 0, 8, 0, 40, 0, 7, 0, 6, 0, 40, 0, 42, 0, 7, 0, 36, 0, 6, 0, 5, 0, 36, 0, 40, 0, 6, 0, 34, 0, 5, 0, 4, 0, 34, 0, 37, 0, 5, 0, 28, 0, 4, 0, 1, 0, 28, 0, 34, 0, 4, 0, 43, 0, 2, 0, 8, 0, 43, 0, 31, 0, 2, 0, 61, 0, 22, 0, 21, 0, 61, 0, 63, 0, 22, 0, 58, 0, 21, 0, 20, 0, 58, 0, 61, 0, 21, 0, 56, 0, 20, 0, 19, 0, 56, 0, 58, 0, 20, 0, 54, 0, 19, 0, 18, 0, 54, 0, 56, 0, 19, 0, 47, 0, 18, 0, 15, 0, 47, 0, 53, 0, 18, 0, 27, 0, 55, 0, 52, 0, 27, 0, 26, 0, 55, 0, 42, 0, 45, 0, 44, 0, 42, 0, 41, 0, 45, 0, 40, 0, 41, 0, 42, 0, 40, 0, 38, 0, 41, 0, 36, 0, 39, 0, 40, 0, 36, 0, 35, 0, 39, 0, 34, 0, 35, 0, 37, 0, 34, 0, 32, 0, 35, 0, 28, 0, 33, 0, 34, 0, 28, 0, 29, 0, 33, 0, 43, 0, 30, 0, 31, 0, 43, 0, 46, 0, 30, 0, 61, 0, 64, 0, 63, 0, 61, 0, 59, 0, 64, 0, 58, 0, 60, 0, 61, 0, 58, 0, 57, 0, 60, 0, 56, 0, 57, 0, 58, 0, 56, 0, 55, 0, 57, 0, 54, 0, 55, 0, 56, 0, 54, 0, 52, 0, 55, 0, 47, 0, 51, 0, 53, 0, 47, 0, 48, 0, 51, 0, 62, 0, 49, 0, 50, 0, 62, 0, 65, 0, 49, 0, 3, 0, 33, 0, 29, 0, 3, 0, 13, 0, 33, 0),
+"lods": [0.796388, PackedByteArray(9, 0, 30, 0, 8, 0, 9, 0, 0, 0, 30, 0, 8, 0, 30, 0, 31, 0, 8, 0, 31, 0, 2, 0, 10, 0, 9, 0, 8, 0, 10, 0, 8, 0, 7, 0, 6, 0, 10, 0, 7, 0, 6, 0, 11, 0, 10, 0, 5, 0, 11, 0, 6, 0, 5, 0, 12, 0, 11, 0, 4, 0, 12, 0, 5, 0, 4, 0, 13, 0, 12, 0, 28, 0, 13, 0, 4, 0, 28, 0, 4, 0, 1, 0, 28, 0, 29, 0, 13, 0, 3, 0, 13, 0, 29, 0, 17, 0, 27, 0, 48, 0, 47, 0, 48, 0, 27, 0, 47, 0, 27, 0, 18, 0, 47, 0, 18, 0, 15, 0, 18, 0, 27, 0, 26, 0, 18, 0, 26, 0, 19, 0, 19, 0, 26, 0, 25, 0, 19, 0, 25, 0, 20, 0, 20, 0, 25, 0, 24, 0, 20, 0, 24, 0, 21, 0, 21, 0, 24, 0, 23, 0, 21, 0, 23, 0, 22, 0, 23, 0, 16, 0, 22, 0, 23, 0, 50, 0, 16, 0, 23, 0, 49, 0, 50, 0, 23, 0, 14, 0, 49, 0)],
+"material": SubResource("StandardMaterial3D_b6j1y"),
+"primitive": 3,
+"uv_scale": Vector4(3.3207, 6.46775, 0, 0),
+"vertex_count": 66,
+"vertex_data": PackedByteArray(59, 190, 212, 253, 32, 208, 103, 240, 91, 204, 64, 0, 134, 23, 134, 198, 0, 0, 192, 254, 64, 233, 210, 240, 63, 205, 27, 0, 0, 0, 159, 198, 145, 196, 236, 33, 33, 33, 198, 202, 214, 157, 181, 81, 6, 70, 48, 211, 216, 103, 148, 136, 222, 138, 17, 221, 187, 50, 9, 175, 154, 178, 97, 231, 188, 2, 101, 218, 119, 216, 73, 238, 221, 221, 22, 217, 123, 179, 35, 236, 11, 251, 193, 175, 106, 114, 120, 226, 140, 235, 66, 136, 188, 69, 209, 218, 110, 213, 253, 80, 117, 18, 152, 210, 23, 209, 6, 33, 214, 1, 207, 201, 12, 123, 255, 255, 255, 255, 93, 14, 25, 172, 6, 0, 7, 10, 217, 3, 200, 65, 180, 252, 215, 186, 28, 13, 175, 237, 0, 0, 28, 13, 89, 5, 78, 161, 211, 32, 82, 13, 255, 7, 171, 114, 9, 82, 62, 31, 13, 16, 47, 82, 119, 137, 146, 78, 130, 18, 166, 86, 194, 176, 208, 110, 218, 15, 162, 73, 235, 215, 67, 156, 170, 14, 249, 150, 14, 220, 149, 239, 1, 17, 69, 213, 100, 176, 238, 184, 43, 24, 108, 249, 128, 137, 142, 131, 47, 24, 255, 255, 160, 80, 56, 57, 136, 20, 32, 245, 111, 32, 179, 20, 253, 10, 137, 204, 63, 0, 91, 18, 62, 198, 10, 205, 39, 0, 53, 5, 126, 198, 238, 125, 36, 254, 158, 216, 158, 240, 76, 64, 112, 254, 194, 224, 216, 240, 246, 205, 115, 33, 170, 9, 247, 202, 246, 205, 115, 33, 170, 9, 5, 202, 172, 199, 243, 33, 35, 25, 161, 201, 24, 197, 45, 82, 240, 30, 92, 211, 98, 173, 24, 82, 2, 54, 149, 209, 98, 173, 24, 82, 2, 54, 117, 209, 148, 188, 157, 136, 29, 95, 87, 218, 148, 188, 157, 136, 29, 95, 185, 219, 163, 146, 178, 136, 213, 116, 182, 218, 203, 175, 75, 176, 45, 140, 114, 227, 129, 123, 166, 176, 119, 158, 242, 228, 130, 82, 254, 217, 154, 203, 132, 237, 130, 82, 254, 217, 154, 203, 100, 237, 245, 141, 192, 217, 174, 193, 204, 236, 245, 141, 192, 217, 174, 193, 247, 236, 0, 188, 7, 0, 200, 10, 59, 4, 198, 221, 3, 0, 95, 12, 249, 4, 137, 105, 253, 254, 216, 234, 50, 14, 75, 83, 182, 253, 253, 207, 159, 13, 208, 221, 193, 32, 231, 18, 249, 9, 208, 221, 193, 32, 231, 18, 67, 10, 100, 184, 222, 32, 145, 15, 128, 8, 100, 184, 222, 32, 145, 15, 192, 8, 54, 212, 119, 81, 31, 49, 75, 19, 83, 158, 109, 82, 119, 38, 82, 17, 140, 192, 228, 137, 55, 114, 195, 22, 245, 140, 215, 137, 231, 97, 123, 19, 92, 167, 49, 177, 86, 160, 107, 22, 92, 167, 49, 177, 86, 160, 133, 22, 15, 131, 65, 177, 196, 138, 55, 18, 209, 99, 221, 217, 75, 186, 252, 15, 209, 99, 221, 217, 75, 186, 87, 15, 211, 123, 227, 218, 87, 211, 224, 17, 211, 123, 227, 218, 87, 211, 254, 17, 98, 124, 152, 234, 68, 102, 153, 208, 60, 124, 118, 237, 134, 105, 138, 211, 5, 101, 167, 208, 26, 111, 149, 220, 228, 121, 213, 231, 202, 120, 181, 228, 189, 124, 160, 235, 176, 127, 216, 230, 35, 130, 93, 228, 128, 129, 229, 231, 244, 116, 196, 226, 233, 109, 21, 220, 129, 200, 174, 122, 23, 236, 83, 119, 175, 199, 95, 122, 69, 237, 221, 118, 56, 234, 79, 121, 102, 228, 148, 123, 92, 220, 195, 125, 37, 212, 134, 127, 117, 205, 111, 128, 26, 204, 157, 125, 2, 212, 136, 126, 83, 219, 23, 125, 130, 224, 228, 119, 158, 229, 114, 115, 160, 103, 77, 210, 181, 104, 190, 210, 181, 124, 216, 235, 50, 124, 207, 236, 189, 104, 0, 212, 68, 108, 73, 218, 28, 104, 241, 212, 85, 115, 131, 223, 87, 111, 198, 220, 245, 111, 188, 221, 216, 128, 195, 233, 32, 121, 135, 225, 243, 120, 250, 228, 191, 130, 109, 229, 208, 124, 121, 231, 192, 124, 239, 233, 172, 125, 233, 234, 101, 127, 206, 233, 82, 126, 177, 232, 163, 236, 83, 119, 56, 237, 24, 119, 75, 200, 122, 122, 213, 199, 54, 122, 10, 232, 225, 118, 35, 230, 106, 116, 170, 233, 212, 120, 241, 231, 162, 118, 204, 224, 6, 120, 173, 226, 72, 122, 142, 219, 202, 124, 111, 219, 222, 125, 107, 212, 234, 126, 79, 212, 173, 126, 192, 211, 23, 128, 32, 204, 196, 125, 164, 204, 222, 126, 215, 204, 208, 125, 192, 204, 156, 125)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_pptn4")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7w6v4"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("24_6but8")
+shader_parameter/Color = Vector3(1, 0, 0)
+shader_parameter/Str = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mwvap"]
+size = Vector3(9.58594, 5.96265, 1)
+
+[node name="RootLevel" instance=ExtResource("1_5jb8s")]
+
+[node name="PlayerController" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5483, 1.01651, -0.660781)
+
+[node name="CameraController" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5483, 0, -0.660781)
+
+[node name="Level01Remeshed" parent="LevelGeo" index="0" instance=ExtResource("3_xdxvj")]
+
+[node name="Meshes" type="Node3D" parent="LevelGeo" index="1"]
+
+[node name="Clover12" parent="LevelGeo/Meshes" index="0" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.99965, -0.0264387, 5.82077e-11, 0.0264208, 0.998975, -0.0367484, 0.000971577, 0.0367355, 0.999325, 7.13741, 0.068154, -11.618)
+
+[node name="Clover17" parent="LevelGeo/Meshes" index="1" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.995438, 0.0567648, 0.0766799, -0.065077, 0.991726, 0.110655, -0.0697641, -0.115141, 0.990897, 14.7955, 0.191338, 1.91506)
+
+[node name="Clover21" parent="LevelGeo/Meshes" index="2" instance=ExtResource("16_yskm2")]
+transform = Transform3D(1.44062, 0.0509423, -0.0646774, -0.0530459, 1.44125, -0.0463608, 0.0629636, 0.0486629, 1.44077, -17.3775, 0.272962, -4.48434)
+
+[node name="Clover26" parent="LevelGeo/Meshes" index="3" instance=ExtResource("16_yskm2")]
+transform = Transform3D(1.44165, 0.00479966, -0.0614583, -0.00303672, 1.44237, 0.04141, 0.0615706, -0.0412429, 1.44107, -19.8071, 0.312455, -0.65954)
+
+[node name="Clover31" parent="LevelGeo/Meshes" index="4" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.956253, -0.0153294, 1.08051, -0.0416824, 1.44227, -0.0164271, -1.07982, -0.0420985, -0.956235, -10.6246, 0.316094, 5.35281)
+
+[node name="Clover32" parent="LevelGeo/Meshes" index="5" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.726239, 0.0287556, 1.24656, 0.0434378, 1.44229, -0.00796426, -1.24614, 0.0335169, -0.726765, -6.85044, 0.0936246, -3.6432)
+
+[node name="Clover33" parent="LevelGeo/Meshes" index="6" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.726239, 0.0287556, 1.24656, 0.0434378, 1.44229, -0.00796426, -1.24614, 0.0335169, -0.726765, -1.95643, 0.0103589, -4.2589)
+
+[node name="Clover59" parent="LevelGeo/Meshes" index="7" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-1.00934, 0.039965, 1.73249, -0.0798086, 2.00172, -0.0926717, -1.73112, -0.115586, -1.00587, 5.52489, 0.340785, 4.27686)
+
+[node name="Clover60" parent="LevelGeo/Meshes" index="8" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-1.00934, 0.039965, 1.73249, -0.0798086, 2.00172, -0.0926717, -1.73112, -0.115586, -1.00587, 26.5121, 0.340786, 4.93483)
+
+[node name="Clover34" parent="LevelGeo/Meshes" index="9" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.0732156, 0.0721406, 1.43931, 1.43417, 0.144949, 0.0656891, -0.141297, 1.43386, -0.0790552, -4.37282, 0.179457, -4.73001)
+
+[node name="Clover30" parent="LevelGeo/Meshes" index="10" instance=ExtResource("16_yskm2")]
+transform = Transform3D(1.23219, 0.742092, 0.114747, -0.344927, 0.363495, 1.35317, 0.666999, -1.18294, 0.487787, -22.1524, 1.40117, -0.655125)
+
+[node name="Clover27" parent="LevelGeo/Meshes" index="11" instance=ExtResource("16_yskm2")]
+transform = Transform3D(1.38249, 0.398372, -0.110422, -0.412082, 1.3587, -0.257452, 0.0328965, 0.278195, 1.41552, -22.9394, 1.24273, -5.9096)
+
+[node name="Clover29" parent="LevelGeo/Meshes" index="12" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.937247, 0.520497, 0.965823, 0.447414, 1.34116, -0.288593, -1.00177, 0.112019, -1.0325, -23.365, 1.06253, -2.06141)
+
+[node name="Clover28" parent="LevelGeo/Meshes" index="13" instance=ExtResource("16_yskm2")]
+transform = Transform3D(1.03956, 0.999504, -0.0497502, -0.998238, 1.0306, -0.153422, -0.0707383, 0.144947, 1.43393, -27.0824, 3.23476, -3.50201)
+
+[node name="Clover14" parent="LevelGeo/Meshes" index="14" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.999674, 0.0253754, 0.00290398, -0.0250343, 0.996022, -0.085522, -0.00506258, 0.0854214, 0.996332, 4.21059, 1.52309, -29.2367)
+
+[node name="Clover15" parent="LevelGeo/Meshes" index="15" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.0394263, 0.0275257, -0.998843, -0.0308981, 0.999109, 0.0287527, 0.998745, 0.031996, -0.0385407, -0.229838, 1.34842, -27.4652)
+
+[node name="Clover54" parent="LevelGeo/Meshes" index="16" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.0475689, 0.082297, -1.40467, 0.034211, 0.778706, 0.1474, 1.41208, -0.0160936, -0.0508903, -5.85417, 1.36801, -30.0429)
+
+[node name="Clover18" parent="LevelGeo/Meshes" index="17" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.0897586, 0.0519405, -1.18049, -0.115146, 1.49451, 0.0498967, 1.15596, 0.152902, -0.0866931, 13.3181, 1.54347, -31.1371)
+
+[node name="Clover20" parent="LevelGeo/Meshes" index="18" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.650447, -1.08011, 0.491424, -0.280153, -0.508666, -1.07783, 0.925201, -0.913377, 0.0191187, 14.5881, 3.30431, -30.088)
+
+[node name="Clover19" parent="LevelGeo/Meshes" index="19" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.935103, 0.00490207, 0.706757, 0.0432342, 1.49986, -0.0656031, -0.693741, 0.100079, 0.948558, 10.2331, 1.33311, -27.9311)
+
+[node name="Clover36" parent="LevelGeo/Meshes" index="20" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.939467, 0.0840464, 0.697621, 0.0397405, 1.48738, -0.166637, -0.688031, 0.200671, 0.942936, 13.1851, 1.94537, -51.137)
+
+[node name="Clover37" parent="LevelGeo/Meshes" index="21" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.924924, -0.046524, 0.719549, 0.097242, 1.49539, -0.0691754, -0.701872, 0.145872, 0.938634, 7.31829, 1.5078, -69.8365)
+
+[node name="Clover38" parent="LevelGeo/Meshes" index="22" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.924924, -0.046524, 0.71955, 0.0631106, 1.5007, -0.023602, -0.705761, 0.0732246, 0.940883, 0.328074, 1.59491, -65.0664)
+
+[node name="Clover39" parent="LevelGeo/Meshes" index="23" instance=ExtResource("16_yskm2")]
+transform = Transform3D(1.48912, -0.0576286, 0.351661, 0.0829025, 1.19168, -0.0310038, -0.343801, 0.0377467, 1.51569, -4.03105, 1.5224, -61.0758)
+
+[node name="Clover41" parent="LevelGeo/Meshes" index="24" instance=ExtResource("16_yskm2")]
+transform = Transform3D(1.48912, -0.0953317, 0.351661, 0.0829025, 1.97133, -0.0310038, -0.343801, 0.0624422, 1.51569, -3.29878, 1.59491, -52.5444)
+
+[node name="Clover42" parent="LevelGeo/Meshes" index="25" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.95496, 0.0975769, 1.21375, 0.0829025, 1.97133, -0.0310038, -1.19321, 0.058872, -0.973554, 2.14814, 1.59491, -48.5981)
+
+[node name="Clover44" parent="LevelGeo/Meshes" index="26" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.379932, 1.65363, 0.757753, 0.896471, 0.53432, -1.189, -1.18091, 0.937637, -0.65882, -12.0714, 3.6373, -58.421)
+
+[node name="Clover45" parent="LevelGeo/Meshes" index="27" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.733828, 1.72272, 0.147521, 0.678356, -0.291262, -1.37604, -1.15926, 0.920069, -0.711824, -12.5504, 9.4758, -58.5695)
+
+[node name="Clover43" parent="LevelGeo/Meshes" index="28" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.95496, 0.0975769, 1.21375, 0.0829025, 1.97133, -0.0310038, -1.19321, 0.058872, -0.973554, -7722.06, -3261.78, -48.9704)
+
+[node name="Clover40" parent="LevelGeo/Meshes" index="29" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.799328, -0.0777209, -0.859791, 0.0631106, 1.5007, -0.023602, 0.845374, -0.0385459, 0.814722, -8.40997, 1.62914, -59.5932)
+
+[node name="Clover56" parent="LevelGeo/Meshes" index="30" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.943104, 0.0187818, -1.11138, -0.0121891, 1.86251, 0.00885718, 1.09304, 0.00456419, 0.959024, -26.5964, 2.24291, -52.9601)
+
+[node name="Clover57" parent="LevelGeo/Meshes" index="31" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-1.04058, -0.00354447, -1.01757, -0.0121891, 1.86251, 0.00885718, 1.00069, 0.0190007, -1.05803, -35.8869, 2.35769, -52.1486)
+
+[node name="Clover58" parent="LevelGeo/Meshes" index="32" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-1.01377, -0.0143591, -1.03631, -0.0118751, 7.54528, 0.00902024, 0.97491, 0.0769744, -1.07751, -35.4032, 6.69249, -56.6029)
+
+[node name="Clover46" parent="LevelGeo/Meshes" index="33" instance=ExtResource("16_yskm2")]
+transform = Transform3D(1.54465, -0.150191, -1.66149, 0.121957, 2.90001, -0.0456094, 1.63363, -0.0744874, 1.5744, -45.7995, 2.01821, -62.7851)
+
+[node name="Clover47" parent="LevelGeo/Meshes" index="34" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.878247, -0.0670258, -0.960625, 0.0693416, 1.29419, -0.02637, 0.928839, -0.0332416, 0.910271, -44.4026, 2.60551, -66.7299)
+
+[node name="Clover61" parent="LevelGeo/Meshes" index="35" instance=ExtResource("16_yskm2")]
+transform = Transform3D(1.13051, -0.0862778, -1.23655, 0.0892588, 1.66592, -0.0339443, 1.19563, -0.0427897, 1.17173, -60.8781, 2.22669, -70.2266)
+
+[node name="Clover63" parent="LevelGeo/Meshes" index="36" instance=ExtResource("16_yskm2")]
+transform = Transform3D(1.52568, -0.113591, 1.59067, 0.0394077, 2.1933, 0.122885, -1.542, -0.0563355, 1.57697, -60.9168, 2.05201, -76.9492)
+
+[node name="Clover64" parent="LevelGeo/Meshes" index="37" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.786668, -0.0585694, 0.820181, 0.0203193, 1.13091, 0.0633621, -0.795084, -0.0290476, 0.813118, -49.5439, 2.51503, -69.5318)
+
+[node name="Clover62" parent="LevelGeo/Meshes" index="38" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.260718, 2.0337, -0.0764954, 1.97271, -0.273404, -0.390164, -0.383815, -0.0237673, -2.05731, -62.2509, 5.98735, -71.1495)
+
+[node name="Clover48" parent="LevelGeo/Meshes" index="39" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.878247, -0.0670258, -0.960625, 0.0693416, 1.29419, -0.02637, 0.928839, -0.0332416, 0.910271, -45.7094, 2.60551, -76.8212)
+
+[node name="Clover49" parent="LevelGeo/Meshes" index="40" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.878247, -0.0670258, -0.960625, 0.0693416, 1.29419, -0.02637, 0.928839, -0.0332416, 0.910271, -54.6468, 2.60551, -85.9093)
+
+[node name="Clover50" parent="LevelGeo/Meshes" index="41" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.147737, 0.0175769, 1.3147, 0.0693416, 1.29419, -0.02637, -1.26974, 0.0727222, 0.151528, -52.0298, 2.60551, -89.448)
+
+[node name="Clover51" parent="LevelGeo/Meshes" index="42" instance=ExtResource("16_yskm2")]
+transform = Transform3D(0.147737, 0.0175769, 1.3147, 0.0693416, 1.29419, -0.02637, -1.26974, 0.0727222, 0.151528, -53.4972, 2.10615, -50.8108)
+
+[node name="Clover52" parent="LevelGeo/Meshes" index="43" instance=ExtResource("16_yskm2")]
+transform = Transform3D(1.8753, -0.103502, -0.0241178, 0.101735, 1.89878, -0.0386889, 0.0253232, 0.036552, 1.94149, -48.7946, 2.10615, -48.3095)
+
+[node name="Clover53" parent="LevelGeo/Meshes" index="44" instance=ExtResource("16_yskm2")]
+transform = Transform3D(2.76341, -0.15252, -0.0355397, 0.149915, 2.79802, -0.0570114, 0.0373159, 0.0538626, 2.86095, -35.7527, 3.13547, -89.3314)
+
+[node name="Clover16" parent="LevelGeo/Meshes" index="45" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.226163, -0.547613, 0.954926, 0.901512, 0.939889, 0.279956, -0.368953, 2.63223, 0.0986998, 1.38608, 2.34766, -29.2717)
+
+[node name="Clover13" parent="LevelGeo/Meshes" index="46" instance=ExtResource("16_yskm2")]
+transform = Transform3D(-0.692316, -1.13475, -0.299088, -0.353264, -0.129622, 1.30951, -1.11907, 0.742936, -0.22835, 9.50991, 1.87361, -11.7368)
+
+[node name="Clover22" parent="LevelGeo/Meshes" index="47" instance=ExtResource("17_6ejcy")]
+transform = Transform3D(-0.799989, 0, -0.600015, 0, 1, 0, 0.600015, 0, -0.799989, 10.2661, 0.00498986, -10.5718)
+
+[node name="Clover66" parent="LevelGeo/Meshes" index="48" instance=ExtResource("17_6ejcy")]
+transform = Transform3D(-0.799989, 0, -0.600015, 0, 1, 0, 0.600015, 0, -0.799989, 14.1083, 0.00498986, -7.12232)
+
+[node name="Clover67" parent="LevelGeo/Meshes" index="49" instance=ExtResource("17_6ejcy")]
+transform = Transform3D(-0.70648, 0, -1.31164, 0, 1.4898, 0, 1.31164, 0, -0.70648, 32.0807, 0.00135016, -11.868)
+
+[node name="Clover68" parent="LevelGeo/Meshes" index="50" instance=ExtResource("17_6ejcy")]
+transform = Transform3D(-1.67787, 0, 0.573541, 0, 1.4898, 0, -0.399385, 0, -2.40952, 35.8417, 0.00134969, 2.5676)
+
+[node name="Clover23" parent="LevelGeo/Meshes" index="51" instance=ExtResource("17_6ejcy")]
+transform = Transform3D(-0.865729, 0, -0.500514, 0, 1, 0, 0.500514, 0, -0.865729, 8.13803, 0.159712, -14.2378)
+
+[node name="Clover25" parent="LevelGeo/Meshes" index="52" instance=ExtResource("17_6ejcy")]
+transform = Transform3D(-0.559526, 0, 0.828813, 0, 1, 0, -0.828813, 0, -0.559526, 12.3266, 1.40571, -26.9378)
+
+[node name="Clover35" parent="LevelGeo/Meshes" index="53" instance=ExtResource("17_6ejcy")]
+transform = Transform3D(-0.953338, -0.153452, -0.259999, -0.148045, 0.988156, -0.0403754, 0.263115, 0, -0.964764, 11.4937, 2.21649, -55.5351)
+
+[node name="Clover65" parent="LevelGeo/Meshes" index="54" instance=ExtResource("17_6ejcy")]
+transform = Transform3D(1.46608, -0.0774918, 0.112505, 0.0805592, 1.46975, -0.0374437, -0.110329, 0.0434378, 1.46765, -60.392, 2.07372, -58.0811)
+
+[node name="Clover55" parent="LevelGeo/Meshes" index="55" instance=ExtResource("17_6ejcy")]
+transform = Transform3D(0.783149, 0.0644333, -0.618486, -0.0863854, 0.996246, -0.00559624, 0.615805, 0.057811, 0.785775, -6.19591, 1.48811, -35.9025)
+
+[node name="Clover24" parent="LevelGeo/Meshes" index="56" instance=ExtResource("17_6ejcy")]
+transform = Transform3D(0.998204, -0.00712029, -0.0594742, 4.65661e-10, 0.99291, -0.118872, 0.0598989, 0.118658, 0.991127, 0.775806, 0.323631, -15.3457)
+
+[node name="RockClusterMid22" parent="LevelGeo/Meshes" index="57" instance=ExtResource("18_6iml8")]
+transform = Transform3D(2.5014, 0, 0, 0, 2.5014, 0, 0, 0, 2.5014, -43.5897, 2.05518, -59.4696)
+
+[node name="RockClusterMid24" parent="LevelGeo/Meshes" index="58" instance=ExtResource("18_6iml8")]
+transform = Transform3D(4.08592, 0, 0, 0, 2.24648, 3.41293, 0, -3.41293, 2.24648, -36.4029, 3.12341, -41.1376)
+
+[node name="RockClusterMid25" parent="LevelGeo/Meshes" index="59" instance=ExtResource("18_6iml8")]
+transform = Transform3D(-2.52283, -0.152411, -1.59878, 0.490252, 2.84016, -1.12325, 1.44923, -1.2261, -2.40318, -30.1118, 2.71163, -41.065)
+
+[node name="RockClusterMid26" parent="LevelGeo/Meshes" index="60" instance=ExtResource("18_6iml8")]
+transform = Transform3D(0.943817, 0.662942, -2.94417, -0.169223, 3.09156, 0.641883, 3.01314, -0.0340289, 0.958263, -23.8328, 1.57485, -53.5366)
+
+[node name="RockClusterMid23" parent="LevelGeo/Meshes" index="61" instance=ExtResource("18_6iml8")]
+transform = Transform3D(-1.79492, 0, 3.20992, 0, 3.67768, 0, -3.20992, 0, -1.79492, -52.272, 2.24949, -48.5237)
+
+[node name="RockClusterMid17" parent="LevelGeo/Meshes" index="62" instance=ExtResource("7_adrhj")]
+transform = Transform3D(2.25335, 0, 0, 0, 2.25335, 0, 0, 0, 2.25335, -41.5624, 2.09105, -63.0106)
+
+[node name="RockClusterSmall12" parent="LevelGeo/Meshes" index="63" instance=ExtResource("19_oity4")]
+transform = Transform3D(3.00947, -0.0947866, 0, 0.0947866, 3.00947, 0, 0, 0, 3.01096, -45.8263, 2.30545, -63.1764)
+
+[node name="RockClusterSmall21" parent="LevelGeo/Meshes" index="64" instance=ExtResource("19_oity4")]
+transform = Transform3D(3.79578, -0.119552, 0, 0.119552, 3.79578, 0, 0, 0, 3.79766, -32.9689, 2.30545, -50.5716)
+
+[node name="RockClusterSmall22" parent="LevelGeo/Meshes" index="65" instance=ExtResource("19_oity4")]
+transform = Transform3D(-0.74949, 0.023606, 1.78769, 0.0610278, 1.93763, 4.30453e-16, -1.78681, 0.0562774, -0.749861, -31.053, 2.32496, -45.6599)
+
+[node name="RockClusterSmall15" parent="LevelGeo/Meshes" index="66" instance=ExtResource("19_oity4")]
+transform = Transform3D(3.00947, -0.0947866, 0, 0.0947866, 3.00947, 0, 0, 0, 3.01096, -26.5441, 2.27234, -52.6375)
+
+[node name="RockClusterSmall16" parent="LevelGeo/Meshes" index="67" instance=ExtResource("19_oity4")]
+transform = Transform3D(3.00947, -0.0947866, 0, 0.0947866, 3.00947, 0, 0, 0, 3.01096, -9.17102, 1.58522, -60.2627)
+
+[node name="RockClusterSmall17" parent="LevelGeo/Meshes" index="68" instance=ExtResource("19_oity4")]
+transform = Transform3D(2.98052, -0.427021, 0.0068166, 0.426403, 2.97274, -0.216426, 0.023964, 0.215204, 3.00316, 10.5065, 1.59315, -49.7975)
+
+[node name="RockClusterSmall18" parent="LevelGeo/Meshes" index="69" instance=ExtResource("19_oity4")]
+transform = Transform3D(-2.52642, 0.476479, 1.56718, 0.426403, 2.97274, -0.216427, -1.58154, 0.040342, -2.56183, 1.9839, 1.29105, -43.644)
+
+[node name="RockClusterSmall20" parent="LevelGeo/Meshes" index="70" instance=ExtResource("19_oity4")]
+transform = Transform3D(-2.3907, 0.123121, -0.20469, 0.107168, 2.39286, 0.187625, 0.213476, 0.177565, -2.3865, -6.69127, 1.32895, -34.6905)
+
+[node name="RockClusterSmall19" parent="LevelGeo/Meshes" index="71" instance=ExtResource("19_oity4")]
+transform = Transform3D(2.90703, -0.3665, 0.69333, 0.426403, 2.97274, -0.216426, -0.658186, 0.307144, 2.92204, 16.3062, 1.62904, -43.3273)
+
+[node name="RockClusterSmall13" parent="LevelGeo/Meshes" index="72" instance=ExtResource("19_oity4")]
+transform = Transform3D(3.00947, -0.0947866, 0, 0.0947866, 3.00947, 0, 0, 0, 3.01096, -36.1636, 3.09043, -74.3343)
+
+[node name="RockClusterSmall14" parent="LevelGeo/Meshes" index="73" instance=ExtResource("19_oity4")]
+transform = Transform3D(-1.45284, 0.224653, -2.62767, -0.00464742, 2.99979, 0.259037, 2.63725, 0.129045, -1.4471, 1.73573, 1.32666, -50.1429)
+
+[node name="TreeSmall12" parent="LevelGeo/Meshes" index="74" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(2.95112, 0, -2.08789, 0, 3.61502, 0, 2.08789, 0, 2.95112, 8.87355, -0.371585, -11.5581)
+
+[node name="TreeSmall19" parent="LevelGeo/Meshes" index="75" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(5.009, 0, -3.54381, 0, 6.13585, 0, 3.54381, 0, 5.009, -47.0607, 1.60138, -58.6868)
+
+[node name="TreeSmall27" parent="LevelGeo/Meshes" index="76" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(2.07572, 0, 5.77408, -0.807788, 6.07551, 0.290391, -5.7173, -0.858399, 2.05531, -59.8325, 1.60138, -76.8595)
+
+[node name="TreeSmall28" parent="LevelGeo/Meshes" index="77" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(2.46987, 1.78962, -5.32407, 0.175067, 5.78871, 2.02702, 5.61407, -0.967842, 2.27907, -61.2, 1.60138, -70.7944)
+
+[node name="TreeSmall29" parent="LevelGeo/Meshes" index="78" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(5.50161, 1.06154, -2.50081, -0.856533, 6.03776, 0.678595, 2.57823, -0.25935, 5.56185, -58.2251, 1.60138, -75.0807)
+
+[node name="TreeSmall20" parent="LevelGeo/Meshes" index="79" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(-3.02611, -1.34732, -4.74909, 1.25392, 5.17788, -2.26796, 4.7746, -2.21375, -2.41432, -45.3753, 1.5031, -61.5582)
+
+[node name="TreeSmall13" parent="LevelGeo/Meshes" index="80" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(2.95112, 0, -2.08789, 0, 3.61502, 0, 2.08789, 0, 2.95112, -0.421046, 0.623013, -27.618)
+
+[node name="TreeSmall14" parent="LevelGeo/Meshes" index="81" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(-2.28484, 0.96819, 2.62879, 1.15933, 3.41494, -0.250085, -2.55027, 0.684984, -2.46887, 4.13268, 0.689088, -29.2089)
+
+[node name="TreeSmall16" parent="LevelGeo/Meshes" index="82" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(-2.08966, -0.488084, 2.90921, -0.64058, 3.5552, 0.136341, -2.87948, -0.436699, -2.14157, -28.6865, 2.0266, -42.4303)
+
+[node name="TreeSmall17" parent="LevelGeo/Meshes" index="83" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(-3.73191, -0.871668, 5.19555, -1.14401, 6.34923, 0.243491, -5.14246, -0.7799, -3.82462, -40.1529, 2.0266, -62.4422)
+
+[node name="TreeSmall18" parent="LevelGeo/Meshes" index="84" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(-5.75417, 1.09223, 7.51414, -0.260673, 9.39406, -1.5651, -7.58865, -1.15089, -5.64393, -53.3285, 2.0266, -91.2951)
+
+[node name="TreeSmall15" parent="LevelGeo/Meshes" index="85" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(-1.49551, -0.179778, -3.28627, -0.159742, 3.60934, -0.124757, 3.2873, 0.0936031, -1.5011, 12.7511, 0.672694, -29.8164)
+
+[node name="TreeSmall21" parent="LevelGeo/Meshes" index="86" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(-1.49551, -0.179778, -3.28627, -0.911479, 3.49106, 0.223813, 3.16245, 0.921177, -1.48955, -21.0528, 1.73682, -54.2248)
+
+[node name="TreeSmall24" parent="LevelGeo/Meshes" index="87" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(3.34205, -0.145034, -1.37042, -0.459457, 3.27199, -1.46676, 1.29923, 1.53018, 3.00649, -26.1535, 2.20465, -53.3307)
+
+[node name="TreeSmall25" parent="LevelGeo/Meshes" index="88" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(3.34205, -0.145034, -1.37042, 0.400805, 3.54184, 0.602604, 1.3185, -0.709042, 3.29048, -32.2935, 1.97791, -44.6467)
+
+[node name="TreeSmall26" parent="LevelGeo/Meshes" index="89" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(3.34205, -0.145034, -1.37042, -0.066467, 3.5738, -0.540315, 1.37647, 0.524712, 3.30128, -35.4505, 5.65061, -56.6812)
+
+[node name="TreeSmall22" parent="LevelGeo/Meshes" index="90" instance=ExtResource("14_h5hg0")]
+transform = Transform3D(3.21172, 0.52076, 0, -0.52076, 3.21172, 0, 0, 0, 3.25367, 1.69145, 0.0388834, -7.80522)
+
+[node name="TreeSmall23" parent="LevelGeo/Meshes" index="91" instance=ExtResource("14_h5hg0")]
+transform = Transform3D(3.21172, 0.52076, 0, -0.52076, 3.21172, 0, 0, 0, 3.25367, -0.0780723, 4.33694, -11.4089)
+
+[node name="Trees" type="Node3D" parent="LevelGeo" index="2"]
+
+[node name="TreeMid12" parent="LevelGeo/Trees" index="0" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(3.16219, 0, 0, 0, 3.16219, 0, 0, 0, 3.16219, 6.8951, 6.66773, -19.1891)
+
+[node name="TreeMid13" parent="LevelGeo/Trees" index="1" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-2.45248, 0.266915, 1.97826, 0.207751, 3.1509, -0.16758, -1.98535, 0, -2.46126, -3.19463, 2.71315, -18.8535)
+
+[node name="TreeMid14" parent="LevelGeo/Trees" index="2" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(2.37511, 0.282776, -2.06841, -0.206535, 3.1495, 0.193414, 2.07741, -0.0101764, 2.38405, 6.09082, 0.964204, -31.156)
+
+[node name="TreeMid15" parent="LevelGeo/Trees" index="3" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-0.943071, -1.04053, 4.06783, 0.124368, 4.16042, 1.09305, -4.19696, 0.357096, -0.881664, 14.9817, -2.78104, -43.8979)
+
+[node name="TreeMid33" parent="LevelGeo/Trees" index="4" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-2.35578, -0.816202, -3.50763, -0.464588, 4.22528, -0.671169, 3.57124, 0.0112623, -2.40113, 20.2831, 7.63765, -40.7475)
+
+[node name="TreeMid16" parent="LevelGeo/Trees" index="5" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(0.679065, 0, -3.34638, 0, 3.41459, 0, 3.34638, 0, 0.679065, 4.78811, 1.36029, -39.7194)
+
+[node name="TreeMid17" parent="LevelGeo/Trees" index="6" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(1.69551, 0, 2.96389, 0, 3.41459, 0, -2.96389, 0, 1.69551, 10.7304, 1.36029, -53.621)
+
+[node name="TreeMid18" parent="LevelGeo/Trees" index="7" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-5.0892, 0, 4.07941, 0, 6.52239, 0, -4.07941, 0, -5.0892, -6.55553, -7.17772, -30.1584)
+
+[node name="TreeMid19" parent="LevelGeo/Trees" index="8" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-5.0892, 0, 4.07941, 0, 6.52239, 0, -4.07941, 0, -5.0892, -37.7003, 4.25992, -55.603)
+
+[node name="TreeMid35" parent="LevelGeo/Trees" index="9" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-5.0892, 0, 4.07941, 0, 6.52239, 0, -4.07941, 0, -5.0892, -17.0407, 6.33962, -60.7291)
+
+[node name="TreeMid20" parent="LevelGeo/Trees" index="10" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-4.59409, 1.15171, 4.48435, -0.309008, 6.22701, -1.91584, -4.61956, -1.56189, -4.33148, -45.2606, 1.12704, -76.0486)
+
+[node name="TreeMid34" parent="LevelGeo/Trees" index="11" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(3.45021, 0.137667, -0.0918719, -0.109791, 3.33852, 0.879519, 0.123849, -0.875589, 3.33907, 5.40361, 2.86102e-06, 4.02994)
+
+[node name="TreeMid21" parent="LevelGeo/Trees" index="12" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(3.99517, -0.0266031, 5.15552, 2.24744, 5.87895, -1.71127, -4.63995, 2.82467, 3.61021, -34.6766, 3.37786, -95.2236)
+
+[node name="TreeMid22" parent="LevelGeo/Trees" index="13" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(3.9503, 2.55378, 4.51828, -3.52021, 5.49081, -0.0257731, -3.81376, -2.42296, 4.70383, -31.184, 12.6435, -70.9141)
+
+[node name="TreeMid23" parent="LevelGeo/Trees" index="14" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-3.99474, 3.55196, 3.73727, 2.29688, 5.45868, -2.73289, -4.61605, -0.357705, -4.59409, -53.6985, 1.12705, -49.019)
+
+[node name="TreeMid24" parent="LevelGeo/Trees" index="15" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-5.59067, 0.708329, -3.28392, 1.07992, 6.41629, -0.454535, 3.18114, -0.933333, -5.61701, -62.3075, 21.7918, -71.5966)
+
+[node name="TreeMid25" parent="LevelGeo/Trees" index="16" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(5.94014, 2.68536, 0.2125, -2.65141, 5.91942, -0.687013, -0.475711, 0.539304, 6.48262, -51.2342, 13.3626, -46.5613)
+
+[node name="TreeMid26" parent="LevelGeo/Trees" index="17" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(2.82232, 1.1073, -5.77494, -1.48219, 6.33282, 0.489906, 5.69027, 1.10034, 2.99192, -23.1957, 0.562098, -38.0491)
+
+[node name="TreeMid27" parent="LevelGeo/Trees" index="18" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-3.41258, 0, 2.73546, 0, 4.37361, 0, -2.73546, 0, -3.41258, -6.55737, 1.08127, -9.31208)
+
+[node name="TreeMid28" parent="LevelGeo/Trees" index="19" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-3.56179, -0.516587, 2.48501, 0.169445, 4.22412, 1.12098, -2.53247, 1.00918, -3.42003, 19.6619, 3.16371, -10.2372)
+
+[node name="TreeMid29" parent="LevelGeo/Trees" index="20" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(1.33399, 0.205873, -4.16011, 0.100228, 4.36541, 0.248172, 4.164, -0.171031, 1.32677, 13.8254, 5.03479, -24.3129)
+
+[node name="TreeMid30" parent="LevelGeo/Trees" index="21" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(1.33399, 0.205873, -4.16011, 0.100228, 4.36541, 0.248172, 4.164, -0.171031, 1.32677, 25.7455, 0.856172, -19.5752)
+
+[node name="TreeMid36" parent="LevelGeo/Trees" index="22" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(1.33399, 0.205873, -4.16011, 0.100228, 4.36541, 0.248172, 4.164, -0.171031, 1.32677, 36.4013, -0.177954, 1.99522)
+
+[node name="TreeMid40" parent="LevelGeo/Trees" index="23" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(5.27983, -0.187339, 1.62456, 0.126736, 4.8327, 0.312453, -1.6407, -0.229557, 5.25206, 27.6559, -1.11349, -8.09128)
+
+[node name="TreeMid41" parent="LevelGeo/Trees" index="24" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(5.27983, -0.187339, 1.62456, -0.396094, 4.51485, 1.9496, -1.5972, -1.73893, 4.8868, 31.4218, -6.91731, 5.19892)
+
+[node name="TreeMid37" parent="LevelGeo/Trees" index="25" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(2.91788, -0.251656, 3.24824, 0.100228, 4.36541, 0.248172, -3.25644, -0.0911306, 2.91818, 45.0235, -0.17923, 11.1674)
+
+[node name="TreeMid38" parent="LevelGeo/Trees" index="26" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(2.1409, -0.265442, 3.80454, 0.100228, 4.36541, 0.248172, -3.81247, -0.0342938, 2.14297, 39.1887, -0.603805, -14.0286)
+
+[node name="TreeMid31" parent="LevelGeo/Trees" index="27" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-3.41258, 0, 2.73546, 0, 4.37361, 0, -2.73546, 0, -3.41258, -23.2735, -1.94666, -4.5779)
+
+[node name="TreeMid32" parent="LevelGeo/Trees" index="28" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(-1.41492, 0, 3.10763, 0, 3.41459, 0, -3.10763, 0, -1.41492, -0.788581, 5.46433, -47.2778)
+
+[node name="TreeMid39" parent="LevelGeo/Trees" index="29" instance=ExtResource("21_p2tbi")]
+transform = Transform3D(4.80001, 0, 0, 0, 4.80001, 0, 0, 0, 4.80001, -2.27248, 0.0161209, -9.01059)
+
+[node name="OutOfBoundsTexture2" parent="LevelGeo/Trees" index="30" instance=ExtResource("22_l5nop")]
+transform = Transform3D(1.44181, 0.14333, -4.97067, 0.0625085, 7.65802, 0.118959, 4.97122, -0.137862, 1.44015, 50.8935, -2.13372, -7.1806)
+
+[node name="OutOfBoundsTexture5" parent="LevelGeo/Trees" index="31" instance=ExtResource("22_l5nop")]
+transform = Transform3D(-0.913082, 0.13435, -2.61429, -0.0395859, 7.17821, 0.0625657, -3.14822, -0.129224, 0.757437, 39.5553, -11.8134, -4.78444)
+
+[node name="OutOfBoundsTexture3" parent="LevelGeo/Trees" index="32" instance=ExtResource("22_l5nop")]
+transform = Transform3D(7.98229, 1.53626e-08, -3.47315, -0.016986, 8.53874, -0.0370539, 3.56493, 0.0406854, 7.77661, -25.1565, 1.88624, -150.226)
+
+[node name="OutOfBoundsTexture4" parent="LevelGeo/Trees" index="33" instance=ExtResource("22_l5nop")]
+transform = Transform3D(4.96999, 1.27514e-08, -5.56318, -0.0151252, 7.08545, -0.0415006, 3.17438, 0.0337607, 8.70985, 19.5934, 0.419122, -71.3539)
+
+[node name="Rocks" type="Node3D" parent="LevelGeo" index="3"]
+
+[node name="RockClusterMid12" parent="LevelGeo/Rocks" index="0" instance=ExtResource("7_adrhj")]
+transform = Transform3D(2.52174, 0.00273578, 0.162429, 0.0117618, 2.51691, -0.224992, -0.162025, 0.225283, 2.51169, 2.05736, 0.983575, -28.1777)
+
+[node name="RockClusterMid14" parent="LevelGeo/Rocks" index="1" instance=ExtResource("7_adrhj")]
+transform = Transform3D(4.09264, -2.2818, 0.468674, 2.30978, 4.09795, -0.218559, -0.301942, 0.419826, 4.68066, 0.81336, 1.179, -33.1344)
+
+[node name="RockClusterMid15" parent="LevelGeo/Rocks" index="2" instance=ExtResource("7_adrhj")]
+transform = Transform3D(0.877182, 0.0522426, -2.39462, -0.262655, 2.53688, -0.0408689, 2.38074, 0.260633, 0.877787, -19.8033, -0.492103, -7.38335)
+
+[node name="RockClusterMid16" parent="LevelGeo/Rocks" index="3" instance=ExtResource("7_adrhj")]
+transform = Transform3D(-2.07872, -0.244208, -1.79932, -0.284212, 2.74509, -0.0442232, 1.79343, 0.151973, -2.09255, -21.6913, -0.492103, -1.63181)
+
+[node name="RockClusterMid17" parent="LevelGeo/Rocks" index="4" instance=ExtResource("7_adrhj")]
+transform = Transform3D(-1.67397, 0.0133112, -1.43912, 0.0479577, 2.20677, -0.0353703, 1.43838, -0.0580833, -1.67365, 16.2354, 0.071269, 3.02884)
+
+[node name="RockClusterMid21" parent="LevelGeo/Rocks" index="5" instance=ExtResource("7_adrhj")]
+transform = Transform3D(-0.119269, -0.0327359, -2.20412, 0.0479577, 2.20677, -0.0353703, 2.20383, -0.0497917, -0.118513, -4.00014, 0.071269, 6.09443)
+
+[node name="RockClusterMid18" parent="LevelGeo/Rocks" index="6" instance=ExtResource("7_adrhj")]
+transform = Transform3D(1.22058, 0.00736017, 0.00917771, -0.00759798, 1.22019, 0.0320604, -0.00897949, -0.0321159, 1.22018, 14.9005, -0.141993, -5.37955)
+
+[node name="RockClusterMid19" parent="LevelGeo/Rocks" index="7" instance=ExtResource("7_adrhj")]
+transform = Transform3D(-0.479707, 0.0467094, -1.89143, -0.0121496, 1.95116, 0.0512665, 1.89196, 0.0243743, -0.479238, 33.9845, -0.141993, -10.0156)
+
+[node name="RockClusterMid20" parent="LevelGeo/Rocks" index="8" instance=ExtResource("7_adrhj")]
+transform = Transform3D(1.93875, 0.0179904, -0.22518, -0.0121496, 1.95116, 0.0512665, 0.225573, -0.0495199, 1.93816, 32.9665, 0.0107356, 8.14914)
+
+[node name="RockClusterMid13" parent="LevelGeo/Rocks" index="9" instance=ExtResource("7_adrhj")]
+transform = Transform3D(-2.52531, 0.0197938, 0.089415, 0.0117618, 2.51691, -0.224992, -0.0908215, -0.224428, -2.51535, 6.99613, 0.983575, -37.8657)
+
+[node name="RockCliffLarge12" parent="LevelGeo/Rocks" index="10" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(-0.725731, 0, -0.052976, 0, 0.727662, 0, 0.052976, 0, -0.725731, -0.205381, -1.02935, -12.5611)
+
+[node name="RockCliffLarge19" parent="LevelGeo/Rocks" index="11" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(0.463859, 0, -0.560649, 0, 0.727662, 0, 0.560649, 0, 0.463859, 10.2078, 0.829292, -24.8842)
+
+[node name="RockCliffLarge16" parent="LevelGeo/Rocks" index="12" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(0.288118, 0.30468, 0.881779, -0.408902, 0.936941, 0, -0.528469, -0.558846, 0.480742, -17.8286, -1.39159, -8.27794)
+
+[node name="RockCliffLarge21" parent="LevelGeo/Rocks" index="13" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(-0.274345, 0.0455899, 0.929321, -0.163082, 1.09351, -0.133883, -0.653935, -0.29183, -0.356488, -25.4487, 0.268462, -7.42287)
+
+[node name="RockCliffLarge13" parent="LevelGeo/Rocks" index="14" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(0.616155, -0.00192551, 0.387094, 0.0834545, 0.711203, -0.129301, -0.377995, 0.153882, 0.602438, 9.82108, -0.499488, -14.4206)
+
+[node name="RockCliffLarge26" parent="LevelGeo/Rocks" index="15" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(-0.0813992, 0.00147471, -1.00043, 0.101875, 0.998536, -0.00681739, 0.995235, -0.102092, -0.0811255, 18.0522, 0.307964, 5.48636)
+
+[node name="RockCliffLarge27" parent="LevelGeo/Rocks" index="16" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(-0.491178, 0.041955, -1.19483, 0.131185, 1.28583, -0.00877882, 1.18835, -0.124605, -0.492887, 34.3151, 0.159519, 11.8249)
+
+[node name="RockCliffLarge15" parent="LevelGeo/Rocks" index="17" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(-0.0769228, 0.00743688, 0.726365, -0.136161, 0.635868, -0.0128533, -1.30475, -0.0667963, -0.0414831, -5.95318, -0.427926, -7.17344)
+
+[node name="RockCliffLarge32" parent="LevelGeo/Rocks" index="18" instance=ExtResource("14_wpiml")]
+transform = Transform3D(0.298508, -0.0110001, 0.637215, -0.722923, 0.026521, 0.263121, -0.0422235, -0.531842, -5.86763e-05, 2.54612, 1.4545, -32.1369)
+
+[node name="RockCliffLarge22" parent="LevelGeo/Rocks" index="19" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(-0.929371, 0, -0.369147, 0, 1, 0, 0.369147, 0, -0.929371, -7.71006, 0.753982, -27.5859)
+
+[node name="RockCliffLarge28" parent="LevelGeo/Rocks" index="20" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(-0.200356, -0.300608, 1.07942, 0.149484, 0.931241, 0.384709, 0.968252, -0.205973, 0.163967, 17.3429, 7.64231, 6.34868)
+
+[node name="RockCliffLarge23" parent="LevelGeo/Rocks" index="21" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(-0.791197, 0.0240658, 0.611088, 0.0653976, 0.996825, 0.0454158, -0.608054, 0.0758965, -0.790259, -6.99779, 0.753982, -37.8257)
+
+[node name="RockCliffLarge25" parent="LevelGeo/Rocks" index="22" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(-0.0248117, 0.0295426, -1.22705, -0.113637, 1.22368, 0.0309905, 1.50038, 0.0931687, -0.0179454, -16.5297, 1.01444, -42.9368)
+
+[node name="RockCliffLarge24" parent="LevelGeo/Rocks" index="23" instance=ExtResource("10_qkfrj")]
+transform = Transform3D(1.33473, 0.0284853, 0.428259, 0.0160156, 1.17989, -0.0788794, -0.633575, 0.0898344, 0.900207, -28.8372, 2.15138, -65.3697)
+
+[node name="RockCliffLarge14" parent="LevelGeo/Rocks" index="24" instance=ExtResource("15_twwac")]
+transform = Transform3D(-1.31318, 0, -0.310827, 0, 1, 0, 0.563998, 0, -0.723714, -1.63109, 1.34692, -48.6383)
+
+[node name="RockCliffLarge20" parent="LevelGeo/Rocks" index="25" instance=ExtResource("15_twwac")]
+transform = Transform3D(1.42837, 0, -0.0537315, 0, 0.912689, 0, 0.0480314, 0, 1.59781, 16.5994, 1.34692, -39.1373)
+
+[node name="RockCliffLarge17" parent="LevelGeo/Rocks" index="26" instance=ExtResource("15_twwac")]
+transform = Transform3D(1.49776, 0, 0.15098, 0, 1.46269, 0, -0.197158, 0, 1.14697, 9.197, 1.34692, -63.073)
+
+[node name="RockCliffLarge18" parent="LevelGeo/Rocks" index="27" instance=ExtResource("15_twwac")]
+transform = Transform3D(-0.465297, 0, 1.10062, 0, 1.46269, 0, -1.43724, 0, -0.356318, -5.97736, 1.34692, -63.1253)
+
+[node name="RockCliffLarge33" parent="LevelGeo/Rocks" index="28" instance=ExtResource("14_wpiml")]
+transform = Transform3D(0.451469, 0, -0.6062, 0, 0.755846, 0, 0.6062, 0, 0.451469, -7.1641, 1.90795, -50.3291)
+
+[node name="RockCliffLarge38" parent="LevelGeo/Rocks" index="29" instance=ExtResource("14_wpiml")]
+transform = Transform3D(-0.507737, 0, 0.559916, 0, 0.755846, 0, -0.559916, 0, -0.507737, -14.7607, 1.9218, -56.1195)
+
+[node name="RockCliffLarge40" parent="LevelGeo/Rocks" index="30" instance=ExtResource("14_wpiml")]
+transform = Transform3D(0.170149, -0.530988, 0.0883789, 0.0536584, 0.105357, 0.547855, -0.590518, -0.143423, 0.0752468, 19.9441, 1.97124, -5.47653)
+
+[node name="RockCliffLarge41" parent="LevelGeo/Rocks" index="31" instance=ExtResource("14_wpiml")]
+transform = Transform3D(-0.0777553, 0.0376853, 0.95011, -0.0283182, -0.960247, 0.0297653, 0.500989, -0.0484285, 0.149143, -9.91331, 13.7349, 5.87299)
+
+[node name="RockCliffLarge42" parent="LevelGeo/Rocks" index="32" instance=ExtResource("14_wpiml")]
+transform = Transform3D(-0.173143, -0.822768, -0.375827, -0.0260206, 0.41546, -0.866487, 0.476637, -0.276198, -0.183827, -17.7009, 3.87475, 3.33224)
+
+[node name="RockCliffLarge34" parent="LevelGeo/Rocks" index="33" instance=ExtResource("14_wpiml")]
+transform = Transform3D(1.20163, 0, -0.368454, 0, 1.25685, 0, 0.368454, 0, 1.20163, -31.1067, 1.90795, -78.9032)
+
+[node name="RockCliffLarge39" parent="LevelGeo/Rocks" index="34" instance=ExtResource("14_wpiml")]
+transform = Transform3D(-0.667832, 0, 1.06474, 0, 1.25685, 0, -1.06474, 0, -0.667832, -54.8609, 1.90795, -92.6543)
+
+[node name="RockCliffLarge36" parent="LevelGeo/Rocks" index="35" instance=ExtResource("14_wpiml")]
+transform = Transform3D(-1.11494, -0.203603, -1.00522, 0.650471, 0.18125, -1.70856, 0.175593, -1.96423, -0.0534623, -59.7826, 14.3143, -55.2027)
+
+[node name="RockCliffLarge37" parent="LevelGeo/Rocks" index="36" instance=ExtResource("14_wpiml")]
+transform = Transform3D(-0.214182, 1.2039, 0.449232, 0.14716, -0.354798, 1.28024, 0.574484, 0.53973, -0.160461, -50.8562, 16.2787, -47.273)
+
+[node name="RockCliffLarge35" parent="LevelGeo/Rocks" index="37" instance=ExtResource("14_wpiml")]
+transform = Transform3D(-0.116542, 0.230317, 0.872407, -1.3362, 0.0198894, -0.121953, -0.128418, -0.415967, 0.477211, -38.0481, 4.9447, -55.3089)
+
+[node name="RockClusterSmall22" parent="LevelGeo/Rocks" index="38" instance=ExtResource("16_duniy")]
+transform = Transform3D(3.12932, 0, 0, 0, 3.12932, 0, 0, 0, 3.12932, -60.0554, 2.07453, -73.191)
+
+[node name="TreeSmall30" parent="LevelGeo/Rocks" index="39" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(5.50161, 1.06154, -2.50081, -0.856533, 6.03776, 0.678595, 2.57823, -0.25935, 5.56185, 27.9593, -0.547152, 1.18171)
+
+[node name="TreeSmall31" parent="LevelGeo/Rocks" index="40" instance=ExtResource("13_hbn0l")]
+transform = Transform3D(0.524709, -0.609234, 6.08295, -0.856533, 6.03776, 0.678595, -6.05307, -0.907174, 0.431274, 32.1013, -1.10641, -7.32515)
+
+[node name="RockClusterSmall28" parent="LevelGeo/Rocks" index="41" instance=ExtResource("16_duniy")]
+transform = Transform3D(1.7314, 0, 0.39408, 0, 3.84053, 0, -0.190139, 0, 3.58848, 37.4711, 0.0353611, -7.99754)
+
+[node name="RockClusterSmall29" parent="LevelGeo/Rocks" index="42" instance=ExtResource("16_duniy")]
+transform = Transform3D(1.64016, 0, -2.47297, 0, 5.39235, 0, 5.68471, 0, 0.713506, 38.4348, -0.148462, -1.74511)
+
+[node name="RockClusterSmall26" parent="LevelGeo/Rocks" index="43" instance=ExtResource("16_duniy")]
+transform = Transform3D(-0.0267075, 0, -3.1292, 0, 3.12932, 0, 3.1292, 0, -0.0267075, -59.4397, 2.07453, -78.9333)
+
+[node name="RockClusterSmall27" parent="LevelGeo/Rocks" index="44" instance=ExtResource("16_duniy")]
+transform = Transform3D(-0.0267075, 0, -3.1292, 0, 3.12932, 0, 3.1292, 0, -0.0267075, -48.5135, 2.38987, -70.1204)
+
+[node name="RockClusterSmall23" parent="LevelGeo/Rocks" index="45" instance=ExtResource("16_duniy")]
+transform = Transform3D(0.00514278, 0, 3.16847, 0, 3.16847, 0, -3.16847, 0, 0.00514278, -14.8673, 2.07453, -46.6522)
+
+[node name="RockClusterSmall24" parent="LevelGeo/Rocks" index="46" instance=ExtResource("16_duniy")]
+transform = Transform3D(-3.12441, 0, -0.526549, 0, 3.16847, 0, 0.526549, 0, -3.12441, -35.2576, 3.14974, -79.4576)
+
+[node name="RockClusterSmall25" parent="LevelGeo/Rocks" index="47" instance=ExtResource("16_duniy")]
+transform = Transform3D(-2.9861, -0.0545163, -1.05804, 0.064858, 3.14893, -0.345298, 1.05746, -0.347081, -2.96657, -39.1866, 2.73412, -93.163)
+
+[node name="VehicleNew" parent="LevelGeo" index="4" instance=ExtResource("24_u71rx")]
+transform = Transform3D(1.34453, 0.0497195, -0.88667, -0.0869669, 1.60845, -0.041682, 0.883794, 0.0826355, 1.3448, 20.504, -0.104294, -0.364614)
+
+[node name="EndSlideTrigger" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.83138, 3.21437, -13.0679)
+slideToEnd = ExtResource("2_43ttt")
+
+[node name="CollisionShape3D" parent="EndSlideTrigger" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.687927, 0.875458, 0)
+
+[node name="EndSlideTrigger2" parent="." index="5" instance=ExtResource("2_p1kcx")]
+transform = Transform3D(0.0806338, 0, 0.996744, 0, 1, 0, -0.996744, 0, 0.0806338, -23.1106, 4.69718, -51.6462)
+slideToEnd = ExtResource("4_2d72t")
+
+[node name="EndSlideTrigger3" parent="." index="6" instance=ExtResource("2_p1kcx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.9686, 2.94162, -55.2519)
+slideToEnd = ExtResource("5_wcbe3")
+isEndPickup = true
+
+[node name="CollisionShape3D" parent="EndSlideTrigger3" index="0"]
+shape = SubResource("BoxShape3D_abb36")
+
+[node name="SmokePlume" parent="EndSlideTrigger3" index="2" instance=ExtResource("7_d7m8p")]
+transform = Transform3D(-1.02671, 0.294387, 0.417246, 0.269122, 1.13997, -0.0981155, -0.433621, 0.0104723, -1.04883, 1.05633, 0.217437, -1.54343)
+
+[node name="Plane" parent="EndSlideTrigger3/SmokePlume" index="0"]
+transform = Transform3D(1.4088, 1.39698e-09, 0, 9.31323e-09, 1.4088, -4.65661e-09, -5.96046e-08, -9.31323e-10, 1.4088, 0, 0, 0)
+material_override = ExtResource("8_hf8v2")
+mesh = SubResource("ArrayMesh_8w2yc")
+
+[node name="NoiseArea" parent="Anomalies" index="0" instance=ExtResource("6_kidcy")]
+transform = Transform3D(14.4983, 0, 0, 0, 14.4983, 0, 0, 0, 14.4983, 12.8938, -0.992985, -36.5822)
+
+[node name="Visual" parent="Anomalies/NoiseArea" index="0"]
+material_override = SubResource("ShaderMaterial_7w6v4")
+
+[node name="Cubes" parent="Anomalies/NoiseArea" index="1"]
+transform = Transform3D(0.27431, 0, -0.40309, 0, 0.487573, 0, 0.40309, 0, 0.27431, 0, 0, 0)
+
+[node name="NoiseArea2" parent="Anomalies" index="1" instance=ExtResource("6_kidcy")]
+transform = Transform3D(-7.01253, 0, 12.6896, 0, 14.4983, 0, -12.6896, 0, -7.01253, 4.25698, 4.22599, -69.6123)
+
+[node name="NoiseArea8" parent="Anomalies" index="2" instance=ExtResource("6_kidcy")]
+transform = Transform3D(-3.7266, 0, 6.74351, 0, 7.70468, 0, -6.74351, 0, -3.7266, 1.92059, 3.58575, -50.0212)
+
+[node name="NoiseArea3" parent="Anomalies" index="3" instance=ExtResource("6_kidcy")]
+transform = Transform3D(-3.82929, 0, 8.18803, 0, 9.03918, 0, -8.18803, 0, -3.82929, -15.4419, 3.92186, -45.0706)
+
+[node name="NoiseArea4" parent="Anomalies" index="4" instance=ExtResource("6_kidcy")]
+transform = Transform3D(-7.46606, 0, 10.3535, 0, 12.7646, 0, -10.3535, 0, -7.46606, -40.9538, 3.89786, -48.2058)
+
+[node name="NoiseArea5" parent="Anomalies" index="5" instance=ExtResource("6_kidcy")]
+transform = Transform3D(-8.07947, 0, 3.38834, 0, 11.5729, 0, -3.38834, 0, -8.07947, -56.9173, 3.89786, -83.0434)
+
+[node name="NoiseArea9" parent="Anomalies" index="6" instance=ExtResource("6_kidcy")]
+transform = Transform3D(-13.1031, 0, 5.49513, 0, 18.7686, 0, -5.49513, 0, -13.1031, -46.5474, 7.57873, -101.477)
+
+[node name="NoiseArea6" parent="Anomalies" index="7" instance=ExtResource("6_kidcy")]
+transform = Transform3D(-5.10262, 0, -7.89046, 0, 11.5729, 0, 2.64246, 0, -15.2366, -42.0777, 3.89786, -68.1451)
+
+[node name="NoiseArea7" parent="Anomalies" index="8" instance=ExtResource("6_kidcy")]
+transform = Transform3D(-2.53024, 0.827194, -9.79852, -2.06253, 11.7692, 2.24134, 5.39477, 4.88757, -3.73876, -57.1765, 3.97327, -64.6582)
+
+[node name="ExitWall" type="StaticBody3D" parent="." index="10"]
+transform = Transform3D(-0.469749, 0, -0.8828, 0, 1, 0, 0.8828, 0, -0.469749, -19.183, 2.87771, -4.15754)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ExitWall" index="0"]
+shape = SubResource("BoxShape3D_mwvap")
+
+[editable path="EndSlideTrigger"]
+[editable path="EndSlideTrigger/MeshInstance3D"]
+[editable path="EndSlideTrigger2"]
+[editable path="EndSlideTrigger2/MeshInstance3D"]
+[editable path="EndSlideTrigger3"]
+[editable path="EndSlideTrigger3/MeshInstance3D"]
+[editable path="EndSlideTrigger3/SmokePlume"]
+[editable path="Anomalies/NoiseArea"]
+[editable path="Anomalies/NoiseArea/Cubes"]

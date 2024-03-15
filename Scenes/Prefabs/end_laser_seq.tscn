@@ -1,0 +1,277 @@
+[gd_scene load_steps=9 format=3 uid="uid://bx1s04ysskpvi"]
+
+[ext_resource type="Script" path="res://Scenes/Prefabs/end_laser_seq.gd" id="1_h3sws"]
+[ext_resource type="Resource" uid="uid://d3xltrvs7xqn6" path="res://Structure/Slides/33End1b.tres" id="2_tlwvp"]
+[ext_resource type="PackedScene" uid="uid://dll3obt30yjnp" path="res://VisualAssets/CommonMeshes/LaserMesh.glb" id="3_sdy38"]
+[ext_resource type="AudioStream" uid="uid://h1lekwuoassl" path="res://Audio/SniperHit2.wav" id="4_0sfyf"]
+[ext_resource type="AudioStream" uid="uid://bctjlhkk21j38" path="res://Audio/BulletImpactLone.wav" id="5_3qck5"]
+
+[sub_resource type="Animation" id="Animation_fo8c0"]
+resource_name = "AimThenFire"
+length = 4.0
+step = 0.0333333
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LaserMesh:rotation:z")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0.715585, -0.25, 0, 0.25, 0, 0.715585, -0.25, 0, 0.25, 0, 0.00872665, -0.25, 0, 0.25, 0, 0.00872665, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.333333, 0.766667, 1.23333, 1.56667, 1.83333, 2.2, 2.6)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LaserMesh:rotation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(-0.226893, -0.25, 0, 0.25, 0, -0.226893, -0.25, 0, 0.25, 0, -0.226893, -0.25, 0, 0.25, 0, 0.0174533, -0.25, 0, 0.25, 0, -0.0174533, -0.25, 0, 0.25, 0, 0.0174533, -0.25, 0, 0.25, 0, -0.00872665, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.333333, 0.766667, 1.23333, 1.56667, 1.83333, 2.2, 2.6)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LaserMesh:rotation:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(-3.23759, -0.25, 0, 0.25, 0, -1.5708, -0.25, 0, 0.25, 0, -1.6057, -0.25, 0, 0.25, 0, -1.52716, -0.25, 0, 0.25, 0, -1.59698, -0.25, 0, 0.25, 0, -1.5708, -0.25, 0, 0.25, 0, -1.5708, -0.25, 0, 0.25, 0, -1.5708, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.333333, 0.766667, 1.23333, 1.56667, 1.83333, 2.2, 2.6)
+}
+tracks/3/type = "audio"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("LaserMesh/BulletSound")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("4_0sfyf")
+}],
+"times": PackedFloat32Array(2.7)
+}
+tracks/3/use_blend = true
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3.4632),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"endSeq"
+}]
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("LaserMesh:scale:x")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.58107, 0.587427, 0.594127, 1.39112, 1.40848, 1.43504, 1.69426, 1.69863, 1.70114, 2.02925, 2.03878, 2.04448, 2.53794, 2.57114)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("LaserMesh:scale:y")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(5.512, -0.25, 0, 0.25, 0, 3.44, -0.25, 0, 0.25, 0, 5.512, -0.25, 0, 0.25, 0, 5.512, -0.25, 0, 0.25, 0, 3.44, -0.25, 0, 0.25, 0, 5.512, -0.25, 0, 0.25, 0, 5.512, -0.25, 0, 0.25, 0, 3.44, -0.25, 0, 0.25, 0, 5.512, -0.25, 0, 0.25, 0, 5.512, -0.25, 0, 0.25, 0, 3.44, -0.25, 0, 0.25, 0, 5.512, -0.25, 0, 0.25, 0, 5.512, -0.25, 0, 0.25, 0, 3.44, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.58107, 0.587427, 0.594127, 1.39112, 1.40848, 1.43504, 1.69426, 1.69863, 1.70114, 2.02925, 2.03878, 2.04448, 2.53794, 2.57114)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("LaserMesh:scale:z")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0, 0.2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.58107, 0.587427, 0.594127, 1.39112, 1.40848, 1.43504, 1.69426, 1.69863, 1.70114, 2.02925, 2.03878, 2.04448, 2.53794, 2.57114)
+}
+tracks/8/type = "audio"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("HitSound")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("5_3qck5")
+}],
+"times": PackedFloat32Array(3.2301)
+}
+tracks/8/use_blend = true
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("DirectionalLight3D:light_energy")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(2.66729, 2.67265, 2.75582, 2.76354),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 5.0, 5.0, 0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("DirectionalLight3D:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(2.66256, 2.66589, 2.77731, 2.77974),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_2jjqr"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LaserMesh:rotation:z")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LaserMesh:rotation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LaserMesh:rotation:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("LaserMesh:scale:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("LaserMesh:scale:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(5.512, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("LaserMesh:scale:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("DirectionalLight3D:light_energy")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("DirectionalLight3D:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e8njf"]
+_data = {
+"AimThenFire": SubResource("Animation_fo8c0"),
+"RESET": SubResource("Animation_2jjqr")
+}
+
+[node name="EndLaserSeq" type="Node3D"]
+script = ExtResource("1_h3sws")
+slideToEnd = ExtResource("2_tlwvp")
+
+[node name="LaserMesh" type="Node3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 5.512, 0, 0, 0, 0.2, 0, 0, 108.444)
+
+[node name="LaserMesh2" parent="LaserMesh" instance=ExtResource("3_sdy38")]
+transform = Transform3D(-2.18557e-08, 0.5, 0, -0.5, -2.18557e-08, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="BulletSound" type="AudioStreamPlayer3D" parent="LaserMesh"]
+transform = Transform3D(3.26519, 1.15522, -3.6061, 0.136291, -0.013987, 0.118925, 0.47925, -4.84942, -1.11958, 0, 10.2118, 0.0010188)
+volume_db = 15.271
+max_distance = 2561.89
+panning_strength = 2.0
+bus = &"World"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_e8njf")
+}
+
+[node name="HitSound" type="AudioStreamPlayer3D" parent="."]
+volume_db = 15.271
+max_distance = 2561.89
+bus = &"World"
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+visible = false
+light_color = Color(1, 1, 0.654902, 1)
+light_energy = 0.0

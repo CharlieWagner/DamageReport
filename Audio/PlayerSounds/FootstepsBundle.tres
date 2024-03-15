@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ClipBundle" load_steps=9 format=3 uid="uid://7wkstlysmt3l"]
+
+[ext_resource type="AudioStream" uid="uid://bshcwfsj8yt7m" path="res://Audio/PlayerSounds/Footstep1.wav" id="1_sj711"]
+[ext_resource type="Script" path="res://Audio/clipBundle.gd" id="1_tur0b"]
+[ext_resource type="AudioStream" uid="uid://iyjujoalcid6" path="res://Audio/PlayerSounds/Footstep2.wav" id="2_lrcuj"]
+[ext_resource type="AudioStream" uid="uid://dt68f5sprdtht" path="res://Audio/PlayerSounds/Footsteps3.wav" id="3_3jjm3"]
+[ext_resource type="AudioStream" uid="uid://ckihtoucn53rp" path="res://Audio/PlayerSounds/Footsteps4.wav" id="4_1nvwk"]
+[ext_resource type="AudioStream" uid="uid://c7s2yxsrdp8n1" path="res://Audio/PlayerSounds/Footsteps5.wav" id="5_ac7jl"]
+[ext_resource type="AudioStream" uid="uid://krxsg408b6nk" path="res://Audio/PlayerSounds/Footsteps7.wav" id="7_rjd5k"]
+[ext_resource type="AudioStream" uid="uid://j2b8dqr7thvw" path="res://Audio/PlayerSounds/Footsteps8.wav" id="8_ykxyo"]
+
+[resource]
+script = ExtResource("1_tur0b")
+clips = Array[AudioStream]([ExtResource("1_sj711"), ExtResource("2_lrcuj"), ExtResource("3_3jjm3"), ExtResource("4_1nvwk"), ExtResource("5_ac7jl"), ExtResource("7_rjd5k"), ExtResource("8_ykxyo")])

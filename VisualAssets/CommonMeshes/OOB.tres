@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://5jenaff31l5v"]
+
+[ext_resource type="Shader" uid="uid://dnk00ij7cgel3" path="res://VisualAssets/CommonMeshes/FoliageBase.tres" id="1_et233"]
+[ext_resource type="Texture2D" uid="uid://cr32mfetlth6k" path="res://VisualAssets/Textures/OutOfBoundsTexture.png" id="2_k2erb"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_et233")
+shader_parameter/WindSpeed = 4.04
+shader_parameter/WindScale = 0.005
+shader_parameter/WindStr = 0.1
+shader_parameter/Tint = Color(0.866667, 0.894118, 0.835294, 1)
+shader_parameter/Color = ExtResource("2_k2erb")

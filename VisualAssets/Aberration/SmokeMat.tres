@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://g4skujlf5tqi"]
+
+[ext_resource type="Shader" uid="uid://b4axo85ujxql1" path="res://VisualAssets/Aberration/SmokeShader.tres" id="1_r065d"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_r065d")
+shader_parameter/Color = null
+shader_parameter/scale = 0.255
+shader_parameter/ScrollSpeed = 0.06
+shader_parameter/Alpha = 1.075

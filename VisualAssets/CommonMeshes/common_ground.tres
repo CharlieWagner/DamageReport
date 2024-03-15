@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=3 uid="uid://o2o02qkd16r4"]
+
+[ext_resource type="Shader" uid="uid://bp02h6b3xxs0u" path="res://VisualAssets/CommonMeshes/common_vblend.tres" id="1_slqe4"]
+[ext_resource type="Texture2D" uid="uid://t2wxqcln0o6b" path="res://VisualAssets/Textures/T_RockMoss.png" id="2_jasgq"]
+[ext_resource type="Texture2D" uid="uid://utudnmxxj8l7" path="res://VisualAssets/Textures/T_PlantDirt.png" id="3_uclxl"]
+[ext_resource type="Texture2D" uid="uid://bwk1v6w8bobc5" path="res://VisualAssets/Textures/T_DeadLeaves.png" id="4_ptr84"]
+[ext_resource type="Texture2D" uid="uid://c6pjx1jehw174" path="res://VisualAssets/Textures/T_PlainDirt.png" id="5_85w4l"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_slqe4")
+shader_parameter/AOStr = 0.577
+shader_parameter/BaseColor = ExtResource("2_jasgq")
+shader_parameter/ColorR = ExtResource("5_85w4l")
+shader_parameter/ColorG = ExtResource("4_ptr84")
+shader_parameter/ColorB = ExtResource("3_uclxl")

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://c0f8kn8vda6ji"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_gqenk"]
+
+[resource]
+script = ExtResource("2_gqenk")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 1
+displayText = "<MissionHour> PST
+Agent ÉÉÉÉÉ starts noticing strange noises in the area."
+secondsAdd = 0.0

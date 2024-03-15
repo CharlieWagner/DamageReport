@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=3 format=3 uid="uid://cwx0va7jn3bpg"]
+
+[ext_resource type="Texture2D" uid="uid://c8lwi1i4yvcky" path="res://UIAssets/SlideAssets/Title.png" id="1_k3hnd"]
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_hkvxg"]
+
+[resource]
+script = ExtResource("2_hkvxg")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 0
+displayText = ""
+displayImage = ExtResource("1_k3hnd")
+secondsAdd = 2.0

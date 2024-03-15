@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://deb4rhoi86f15"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_kebtq"]
+
+[resource]
+script = ExtResource("2_kebtq")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 2
+displayText = "<MissionHour> PST
+Agent ÉÉÉÉÉ identifies another entity in the vicinity of the Gamma impact point.
+Agent ÉÉÉÉÉ starts mildly coughing."
+secondsAdd = 0.0

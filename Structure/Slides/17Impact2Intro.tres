@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://dcjskrpyfk7g8"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_bi1x0"]
+
+[resource]
+script = ExtResource("2_bi1x0")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 1
+displayText = "<MissionHour> PST
+Agent ÉÉÉÉÉ arrives at Impact point Beta.
+Agent ÉÉÉÉÉ has now been in contact with ÉÉÉÉÉ for <MissionTime> minutes."
+secondsAdd = 0.0

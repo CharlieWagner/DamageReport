@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://dnql2ctc116hr"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_x8iow"]
+
+[resource]
+script = ExtResource("2_x8iow")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 2
+displayText = "Agent ÉÉÉÉÉ has now been in contact with ÉÉÉÉÉ for <MissionTime> minutes.
+Agent ÉÉÉÉÉ collects the samples and heads for impact point Delta."
+secondsAdd = 180.0

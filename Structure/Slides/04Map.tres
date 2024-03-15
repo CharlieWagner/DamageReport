@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=3 format=3 uid="uid://kqhqcpmeng2e"]
+
+[ext_resource type="Texture2D" uid="uid://deiyy8hr15m11" path="res://UIAssets/SlideAssets/Map.png" id="2_jpwku"]
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_x6nn6"]
+
+[resource]
+script = ExtResource("2_x6nn6")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 0
+displayText = ""
+displayImage = ExtResource("2_jpwku")
+secondsAdd = 0.0

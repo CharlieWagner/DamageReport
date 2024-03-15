@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://b8vqkwnm1vmlv"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_pnhtv"]
+
+[resource]
+script = ExtResource("2_pnhtv")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 0
+displayText = "February 29th 1967
+7:41 PST
+Agent ÉÉÉÉÉ ÉÉÉÉÉ is dispatched by ÉÉÉÉÉ control to survey the area for samples.
+
+"
+secondsAdd = 0.0

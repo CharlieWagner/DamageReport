@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://bo6nhu81vjm7k"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_vnu3y"]
+
+[resource]
+script = ExtResource("2_vnu3y")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 0
+displayText = "February 29th 1967
+7:32 PST
+The entry is captured by a civilian helicopter executing a training flight between ÉÉÉÉÉÉ and ÉÉÉÉÉ."
+secondsAdd = 0.0

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://wqmgl5imrawq"]
+
+[ext_resource type="Script" path="res://Scenes/Prefabs/Killzone.gd" id="1_twfeh"]
+
+[node name="Killzone" type="Area3D"]
+script = ExtResource("1_twfeh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

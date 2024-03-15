@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://c72i320pxd6d5"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_ctq0i"]
+
+[resource]
+script = ExtResource("2_ctq0i")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 0
+displayText = "<MissionHour> PST
+Agent ÉÉÉÉÉ collects samples from impact point Alpha and starts to head for impact point Beta."
+secondsAdd = 300.0

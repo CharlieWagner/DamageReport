@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://76mhogestmg5"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_2wqcc"]
+
+[resource]
+script = ExtResource("2_2wqcc")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 3
+displayText = "<MissionHour> PST
+Agent ÉÉÉÉÉ reaches the sample location.
+The entities dissapear.
+He starts collecting the samples."
+secondsAdd = 120.0

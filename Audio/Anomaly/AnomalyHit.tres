@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ClipBundle" load_steps=4 format=3 uid="uid://1bgnxfd2lhci"]
+
+[ext_resource type="AudioStream" uid="uid://lxtr15cu02et" path="res://Audio/Anomaly/AnomalyHit1.wav" id="1_mj58k"]
+[ext_resource type="Script" path="res://Audio/clipBundle.gd" id="1_sl4qp"]
+[ext_resource type="AudioStream" uid="uid://dku86pw3l7d7n" path="res://Audio/Anomaly/AnomalyHit2.wav" id="2_bknj7"]
+
+[resource]
+script = ExtResource("1_sl4qp")
+clips = Array[AudioStream]([ExtResource("1_mj58k"), ExtResource("2_bknj7")])

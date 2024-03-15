@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://dyl10hlk3q6ox"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_niwyd"]
+
+[resource]
+script = ExtResource("2_niwyd")
+isGameplay = true
+skipOnInput = false
+sceneIndex = 0
+displayText = "Use Left bumper/Right click to use the detector"
+secondsAdd = 0.0

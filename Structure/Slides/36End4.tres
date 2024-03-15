@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://b57h862vs68h2"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_k0054"]
+
+[resource]
+script = ExtResource("2_k0054")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 3
+displayText = "Damage Report - Conclusion :
+
+Experiment A-12 is a partial success.
+ÉÉÉÉÉ-based weaponry is now confirmed as effective even in an uncontrolled environment.
+Focus for A-13 and A-14 will be on stabilizing & improving cognition of ÉÉÉÉ-type entities.
+Recommend longer incubation period of 7 weeks (Use remains of ÉÉÉÉÉ as substrate)."
+secondsAdd = 0.0

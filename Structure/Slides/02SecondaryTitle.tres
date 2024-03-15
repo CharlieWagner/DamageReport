@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=3 format=3 uid="uid://b4mvg2eb86w45"]
+
+[ext_resource type="Texture2D" uid="uid://bhv0t1akuh8yb" path="res://UIAssets/SlideAssets/IntroLogo.png" id="1_ti552"]
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_gtknc"]
+
+[resource]
+script = ExtResource("2_gtknc")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 0
+displayText = "
+Case A-12
+
+Document for authorized ÉÉÉÉÉÉÉÉ  personnel only
+
+"
+displayImage = ExtResource("1_ti552")
+secondsAdd = 0.0

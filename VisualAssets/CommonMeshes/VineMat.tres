@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://beaf7p8nba0ge"]
+
+[ext_resource type="Shader" uid="uid://dnk00ij7cgel3" path="res://VisualAssets/CommonMeshes/FoliageBase.tres" id="1_usnbq"]
+[ext_resource type="Texture2D" uid="uid://bt6mihq25q84k" path="res://VisualAssets/Textures/T_VineOverlay.png" id="2_xvdkt"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_usnbq")
+shader_parameter/WindSpeed = 4.04
+shader_parameter/WindScale = 0.005
+shader_parameter/WindStr = 0.1
+shader_parameter/Tint = Color(0.866667, 0.894118, 0.835294, 1)
+shader_parameter/Color = ExtResource("2_xvdkt")

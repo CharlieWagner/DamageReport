@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://dgqn2glxfvrjf"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_ynnd4"]
+
+[resource]
+script = ExtResource("2_ynnd4")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 0
+displayText = "February 29th 1967
+8:35 PST
+Agent ÉÉÉÉÉ ÉÉÉÉÉ arrives north of impact point alpha."
+secondsAdd = 0.0

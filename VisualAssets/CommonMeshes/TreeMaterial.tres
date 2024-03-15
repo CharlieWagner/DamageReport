@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://koe3epdwixjr"]
+
+[ext_resource type="Shader" uid="uid://bm45rxo6wu0yp" path="res://VisualAssets/CommonMeshes/FoliageBaseCutout.tres" id="1_x5qvv"]
+[ext_resource type="Texture2D" uid="uid://dgf60oo4dwfh5" path="res://VisualAssets/Textures/T_TreeAtlas.png" id="2_amamq"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_x5qvv")
+shader_parameter/WindSpeed = 4.04
+shader_parameter/WindScale = 0.005
+shader_parameter/WindStr = 0.1
+shader_parameter/Tint = Color(1, 1, 1, 1)
+shader_parameter/AlphaThreshold = 0.46
+shader_parameter/Color = ExtResource("2_amamq")

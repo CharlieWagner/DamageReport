@@ -1,0 +1,125 @@
+[gd_scene load_steps=12 format=3 uid="uid://bownadjgxg10k"]
+
+[ext_resource type="Texture2D" uid="uid://binkfbanhmoy7" path="res://UIAssets/background2.png" id="1_453p8"]
+[ext_resource type="Script" path="res://Scenes/Prefabs/ui_base.gd" id="1_tvlk4"]
+[ext_resource type="Shader" uid="uid://bia08qq7ljlsf" path="res://UIAssets/PostProcessing.tres" id="2_05afi"]
+[ext_resource type="Resource" uid="uid://bersel7s0424g" path="res://Audio/SlideClicks/clicks.tres" id="2_6q8dw"]
+[ext_resource type="Texture2D" uid="uid://c6kdiqwimp6ry" path="res://VisualAssets/Aberration/noiseTexture.png" id="3_7idth"]
+[ext_resource type="FontFile" uid="uid://bci44g5egdpen" path="res://UIAssets/RabbidHighwaySignII-Custom.otf" id="3_qekvx"]
+[ext_resource type="Texture2D" uid="uid://d2cavtm83pdrl" path="res://UIAssets/BaseBackground.png" id="4_70uyd"]
+[ext_resource type="AudioStream" uid="uid://cjovjnx47bdt0" path="res://Audio/SlideAmbient.wav" id="8_lrup4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ac2sy"]
+font = ExtResource("3_qekvx")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+shadow_size = 0
+shadow_offset = Vector2(0, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4td52"]
+font = ExtResource("3_qekvx")
+font_size = 35
+outline_color = Color(0, 0, 0, 1)
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rsv78"]
+shader = ExtResource("2_05afi")
+shader_parameter/Bleed = 0.002
+shader_parameter/BleedDamageStr = 0.001
+shader_parameter/NoiseScale = 20.0
+shader_parameter/NoiseStr = 0.1
+shader_parameter/NoiseText = ExtResource("3_7idth")
+
+[node name="UIBase" type="CanvasLayer"]
+script = ExtResource("1_tvlk4")
+clicks = ExtResource("2_6q8dw")
+
+[node name="Container" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Slide" type="Control" parent="Container"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="Container/Slide"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_70uyd")
+
+[node name="DisplayImage" type="TextureRect" parent="Container/Slide"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Text" type="Label" parent="Container/Slide"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+text = "this is a ÉÉÉÉÉÉ test"
+label_settings = SubResource("LabelSettings_ac2sy")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="TutorialText" type="Label" parent="Container"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.75
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+text = "this is a test tutorial text"
+label_settings = SubResource("LabelSettings_4td52")
+horizontal_alignment = 1
+
+[node name="PostProcess" type="ColorRect" parent="Container"]
+material = SubResource("ShaderMaterial_rsv78")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Container"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_453p8")
+expand_mode = 1
+
+[node name="SlideSound" type="AudioStreamPlayer3D" parent="."]
+panning_strength = 0.0
+bus = &"UI"
+
+[node name="SlideAmb" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("8_lrup4")
+autoplay = true
+panning_strength = 0.0
+bus = &"UI"

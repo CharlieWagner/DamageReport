@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ClipBundle" load_steps=5 format=3 uid="uid://nplknswsnma6"]
+
+[ext_resource type="AudioStream" uid="uid://3wxsynxl8bxb" path="res://Audio/PlayerSounds/Cough1.wav" id="1_i31cd"]
+[ext_resource type="Script" path="res://Audio/clipBundle.gd" id="1_ksyow"]
+[ext_resource type="AudioStream" uid="uid://c3vlfsuor0i61" path="res://Audio/PlayerSounds/Cough2.wav" id="2_o0jxd"]
+[ext_resource type="AudioStream" uid="uid://cxx37jmuke570" path="res://Audio/PlayerSounds/Cough3.wav" id="3_njovy"]
+
+[resource]
+script = ExtResource("1_ksyow")
+clips = Array[AudioStream]([ExtResource("1_i31cd"), ExtResource("2_o0jxd"), ExtResource("3_njovy"), null, null])

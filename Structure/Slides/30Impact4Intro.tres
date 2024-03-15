@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://cimd5w53ckibx"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_fhtrn"]
+
+[resource]
+script = ExtResource("2_fhtrn")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 3
+displayText = "<MissionHour> PST
+Agent ÉÉÉÉÉ Identifies 2 entities in the vicinity of the Delta impact point.
+Agent ÉÉÉÉÉ moves towards the last impact point."
+secondsAdd = 0.0

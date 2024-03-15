@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ClipBundle" load_steps=5 format=3 uid="uid://bersel7s0424g"]
+
+[ext_resource type="Script" path="res://Audio/clipBundle.gd" id="1_0c85s"]
+[ext_resource type="AudioStream" uid="uid://by1kc4fkby638" path="res://Audio/SlideClicks/SlideClick1.wav" id="1_6jhar"]
+[ext_resource type="AudioStream" uid="uid://xfv1p2xdg7p5" path="res://Audio/SlideClicks/SlideClick2.wav" id="2_utehp"]
+[ext_resource type="AudioStream" uid="uid://ec5sti4bwtby" path="res://Audio/SlideClicks/SlideClick3.wav" id="3_tldik"]
+
+[resource]
+script = ExtResource("1_0c85s")
+clips = Array[AudioStream]([ExtResource("1_6jhar"), ExtResource("2_utehp"), ExtResource("3_tldik"), null])

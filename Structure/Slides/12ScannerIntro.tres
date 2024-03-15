@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=3 format=3 uid="uid://dq5kjxfsvnsqt"]
+
+[ext_resource type="Texture2D" uid="uid://bpatileaughb6" path="res://UIAssets/SlideAssets/Scanner.png" id="1_q3x3q"]
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_5w8up"]
+
+[resource]
+script = ExtResource("2_5w8up")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 0
+displayText = "Agent ÉÉÉÉÉ ÉÉÉÉÉ is equipped with a 40 kPlt short-range ÉÉÉÉÉ detector.
+The agent is instructed to collect samples at the impact point.
+
+
+
+
+
+"
+displayImage = ExtResource("1_q3x3q")
+secondsAdd = 0.0

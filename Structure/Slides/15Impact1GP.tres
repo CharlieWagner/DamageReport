@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://cbaguxlyhfru6"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_uhsl7"]
+
+[resource]
+script = ExtResource("2_uhsl7")
+isGameplay = true
+skipOnInput = false
+sceneIndex = 0
+displayText = ""
+secondsAdd = 0.0

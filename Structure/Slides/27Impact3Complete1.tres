@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://c40xej8fm8m5f"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_p05t3"]
+
+[resource]
+script = ExtResource("2_p05t3")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 2
+displayText = "<MissionHour> PST
+Agent ÉÉÉÉÉ reaches the sample location. the entity vanishes.
+Agent ÉÉÉÉÉ starts hearing a ringing sound the cough worsens."
+secondsAdd = 0.0

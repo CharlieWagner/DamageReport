@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ClipBundle" load_steps=8 format=3 uid="uid://ba8cng8103nwj"]
+
+[ext_resource type="AudioStream" uid="uid://boju2lom30xgd" path="res://Audio/Entity/chirp1.wav" id="1_w2043"]
+[ext_resource type="AudioStream" uid="uid://d3qqytirpeyck" path="res://Audio/Entity/chirp2.wav" id="2_p0idw"]
+[ext_resource type="AudioStream" uid="uid://bhswj4ks4qdpq" path="res://Audio/Entity/chirp3.wav" id="3_bx5l1"]
+[ext_resource type="AudioStream" uid="uid://dgi3jp6mbgeex" path="res://Audio/Entity/chirp5.wav" id="5_wb7pq"]
+[ext_resource type="AudioStream" uid="uid://bl8i8qs4l0si" path="res://Audio/Entity/chirp6.wav" id="6_j5px8"]
+[ext_resource type="AudioStream" uid="uid://oo3g1dk3tl5d" path="res://Audio/Entity/chirpnew.wav" id="6_oq8it"]
+[ext_resource type="Script" path="res://Audio/clipBundle.gd" id="7_5cudf"]
+
+[resource]
+script = ExtResource("7_5cudf")
+clips = Array[AudioStream]([ExtResource("1_w2043"), ExtResource("2_p0idw"), ExtResource("3_bx5l1"), null, ExtResource("5_wb7pq"), ExtResource("6_j5px8"), ExtResource("6_oq8it")])

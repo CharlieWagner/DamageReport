@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://b67eudgj8m1kb"]
+
+[ext_resource type="Shader" uid="uid://cop4vuctk8rnr" path="res://VisualAssets/Aberration/EnemyShader.tres" id="1_ervif"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ervif")
+shader_parameter/IntensityMult = 0.0
+shader_parameter/emissiveBoost = 0.5

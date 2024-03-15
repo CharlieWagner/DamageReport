@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://lb7idys6ww6a"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_a83ec"]
+
+[resource]
+script = ExtResource("2_a83ec")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 3
+displayText = "End of report"
+secondsAdd = 0.0

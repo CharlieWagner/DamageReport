@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://b4bwuy6bt5olc"]
+
+[ext_resource type="Script" path="res://Scenes/Prefabs/EndSlideTrigger.gd" id="1_3iau1"]
+[ext_resource type="Shader" uid="uid://damd45qdl4lsw" path="res://VisualAssets/Aberration/CubeShader.tres" id="2_foead"]
+[ext_resource type="PackedScene" uid="uid://b21ur14xsu274" path="res://VisualAssets/CommonMeshes/SampleCore.glb" id="2_ugwtb"]
+[ext_resource type="AudioStream" uid="uid://by1uh66e7pgv4" path="res://Audio/Anomaly/AnomalyIdle.wav" id="4_h78fm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ntxhx"]
+size = Vector3(16.6405, 9.0882, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ry3m4"]
+render_priority = 0
+shader = ExtResource("2_foead")
+shader_parameter/OscillationSpeed = 5.0
+shader_parameter/OscillationStr = 0.2
+
+[node name="EndSlideTrigger" type="Area3D"]
+script = ExtResource("1_3iau1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_ntxhx")
+
+[node name="MeshInstance3D" parent="." instance=ExtResource("2_ugwtb")]
+transform = Transform3D(2.49927, 0, 0, 0, 2.49927, 0, 0, 0, 2.49927, 0, 0, 0)
+visible = false
+
+[node name="SampleCore" parent="MeshInstance3D" index="0"]
+layers = 513
+surface_material_override/0 = SubResource("ShaderMaterial_ry3m4")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="MeshInstance3D"]
+stream = ExtResource("4_h78fm")
+volume_db = 2.7
+pitch_scale = 1.49
+max_distance = 47.94
+max_polyphony = 100
+bus = &"World"
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+
+[editable path="MeshInstance3D"]

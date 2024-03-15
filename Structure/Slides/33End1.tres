@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://bfenatlagi5f3"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_tdgla"]
+
+[resource]
+script = ExtResource("2_tdgla")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 3
+displayText = "<MissionHour> PST
+Agent ÉÉÉÉÉ starts heading back to their vehicle
+Agent ÉÉÉÉÉ's cough continues, as well as the ringing sound"
+secondsAdd = 180.0

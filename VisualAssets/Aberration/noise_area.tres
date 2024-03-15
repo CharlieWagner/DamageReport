@@ -1,0 +1,12 @@
+[gd_resource type="SphereMesh" load_steps=3 format=3 uid="uid://bp2cr42wj0x1i"]
+
+[ext_resource type="Shader" uid="uid://clrd1ygkaetwu" path="res://VisualAssets/Aberration/AberrationMarkup.tres" id="1_4ng7g"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wt60g"]
+render_priority = 0
+shader = ExtResource("1_4ng7g")
+shader_parameter/Str = 3.0
+shader_parameter/Color = Vector3(1, 0, 0)
+
+[resource]
+material = SubResource("ShaderMaterial_wt60g")

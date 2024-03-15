@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://csovs8qxdjoxc"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_eejmd"]
+
+[resource]
+script = ExtResource("2_eejmd")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 3
+displayText = "<MissionHour> PST
+Agent ÉÉÉÉÉ is intercepted by cleanup crew 7-Alpha after <MissionTime> minutes of exposure to ÉÉÉÉÉ.
+Agent is terminated and his body is taken to search site ÉÉÉÉÉÉÉ.
+Experiment A-12 concludes."
+secondsAdd = 0.0

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Slide" load_steps=2 format=3 uid="uid://br35ou8gvitsm"]
+
+[ext_resource type="Script" path="res://Structure/Slide.gd" id="2_puso8"]
+
+[resource]
+script = ExtResource("2_puso8")
+isGameplay = false
+skipOnInput = true
+sceneIndex = 1
+displayText = "<MissionHour> PST
+Agent ÉÉÉÉÉ reaches the impact center. The entity vanishes.
+Agent ÉÉÉÉÉ finishes collecting samples and heads for impact point Gamma."
+secondsAdd = 240.0
