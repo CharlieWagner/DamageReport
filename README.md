@@ -7,7 +7,6 @@ This report is only for authorized ████████ personnel only
 
 
 This is my first project in Godot, made in 14 days and roughly 70 nonconsecutive hours for the Acerola Jam 0.
-(This project is made with the non-C# version of godot 4.2.1 so use that if you want to open it)
 
 All assets made by me unless included in the credits.
 
@@ -20,3 +19,8 @@ Aerial photo: autumn-trees by JJ Skys the Limit
 █████ sound : ████████████ by u1769092
 
 Playtesting : Sonny Sautron, Hugo Anglade
+
+## PROJECT NOTES
+
+This project is made with the non-C# version of godot 4.2.1 so use that if you want to open it.
+When running, the game plays from start but if you want to check a particular scene you can press numpad keys 0-4 to switch between the levels.
