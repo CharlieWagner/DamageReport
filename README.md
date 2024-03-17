@@ -7,6 +7,8 @@ This report is only for authorized ████████ personnel only
 
 
 This is my first project in Godot, made in 14 days and roughly 70 nonconsecutive hours for the Acerola Jam 0.
+(This project is made with the non-C# version of godot 4.2.1 so use that if you want to open it)
+
 All assets made by me unless included in the credits.
 
 Additional credits (full version at the end of the game) :
