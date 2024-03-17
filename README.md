@@ -6,7 +6,9 @@ In this exploration / horror experience, take the role of agent █████�
 This report is only for authorized ████████ personnel only
 
 
-This is my first project in Godot, made in 14 days and roughly 70 nonconsecutive hours for the Acerola Jam 0. All assets made by me unless included in the credits.
+This is my first project in Godot, made in 14 days and roughly 70 nonconsecutive hours for the Acerola Jam 0.
+All assets made by me unless included in the credits.
+
 Additional credits (full version at the end of the game) :
 
 Font : Rabbid Highway Sign 2 by KineticPlasma Fonts
